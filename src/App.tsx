@@ -10,9 +10,32 @@ import HomePage from './components/pages/HomePage';
 import StoryPage from './components/pages/StoryPage';
 import './App.css';
 
-function App() {
-  return (
-    <Router>
+type AppState = {
+  hasFullyLoaded: boolean
+}
+class App extends React.Component<{}, AppState> {
+
+  componentWillMount() {
+    this.setState({
+      hasFullyLoaded: false
+    });
+
+    fetch("/stories.json").then((response) => {
+      return response.json();
+    }).then((stories) => {
+      console.log(stories);
+      this.setState({
+        hasFullyLoaded: true
+      })
+    });
+  }
+
+  render() {
+    if (!this.state.hasFullyLoaded) {
+      return <h1>Getting ready....</h1>;
+    }
+
+    return (<Router>
       <div>
         <nav>
           <ul>
@@ -42,8 +65,8 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
-  );
+    </Router>);
+  }
 }
 
 export default App;
