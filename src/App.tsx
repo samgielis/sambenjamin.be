@@ -9,10 +9,17 @@ import TagPage from './components/pages/TagPage';
 import HomePage from './components/pages/HomePage';
 import StoryPage from './components/pages/StoryPage';
 import './App.css';
+import { Story, StoryIndex } from './components/model/Story';
 
 type AppState = {
   hasFullyLoaded: boolean
-  stories: []
+  stories: Story[]
+}
+
+function downloadJSON(fileName: string): Promise<any> {
+  return fetch(fileName).then((response) => {
+    return response.json();
+  });
 }
 class App extends React.Component<{}, AppState> {
 
@@ -21,17 +28,22 @@ class App extends React.Component<{}, AppState> {
       hasFullyLoaded: false,
       stories: []
     });
+  }
 
-    fetch("/stories.json").then((response) => {
-      return response.json();
-    }).then((stories) => {
+  componentDidMount() {
+    downloadJSON("/stories/index.json").then(async (storyIndex: StoryIndex) => {
+      const stories = [];
+      for (let storyID of storyIndex.stories) {
+        const story = await downloadJSON(`/stories/${storyID}.json`);
+        stories.push(story);
+      }
       this.setState({
         hasFullyLoaded: true,
         stories: stories
       })
     });
   }
-
+  
   render() {
     if (!this.state.hasFullyLoaded) {
       return <h1>Getting ready....</h1>;
@@ -57,7 +69,7 @@ class App extends React.Component<{}, AppState> {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/s">
-            <StoryPage />
+            <StoryPage stories={this.state.stories} />
           </Route>
           <Route path="/t">
             <TagPage />
