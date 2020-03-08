@@ -34,7 +34,7 @@ class App extends React.Component<{}, AppState> {
     downloadJSON("/stories/index.json").then(async (storyIndex: StoryIndex) => {
       const stories = [];
       for (let storyID of storyIndex.stories) {
-        const story = await downloadJSON(`/stories/${storyID}.json`);
+        const story = await downloadJSON(`/stories/${storyID}/index.json`);
         stories.push(story);
       }
       this.setState({
