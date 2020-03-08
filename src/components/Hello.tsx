@@ -1,5 +1,6 @@
 import * as React from "react";
 import './Hello.css';
+import Button from 'react-bootstrap/Button';
 
 export interface Props {
   name: string;
@@ -19,6 +20,7 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
 
   return (
     <div className="hello">
+      <Button>I like butt(on)s</Button>
       <div className="greeting">
         Hello {name + getExclamationMarks(enthusiasmLevel)}
       </div>
