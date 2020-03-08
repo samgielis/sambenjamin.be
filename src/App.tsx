@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch
+  Link
 } from "react-router-dom";
 import TagPage from './components/pages/TagPage';
 import HomePage from './components/pages/HomePage';
@@ -45,19 +44,19 @@ class App extends React.Component<{}, AppState> {
     if (!this.state.hasFullyLoaded) {
       return <h1>Getting ready....</h1>;
     }
-    
+
     const storyLinks = this.state.stories.map((story: Story) => {
       return <li>
-          <Link to={`/${getStoryID(story)}`}>{getStoryID(story)}</Link>
+        <Link to={`/${getStoryID(story)}`}>{getStoryID(story)}</Link>
       </li>
 
-  })
+    })
     const storyRoutes = this.state.stories.map((story: Story) => {
       return <Route path={`/${getStoryID(story)}`}>
-          <h1>I am {story.title}</h1>
+        <StoryPage story={story}></StoryPage>
       </Route>
     })
-    
+
     return (<Router>
       <div>
         <nav>
