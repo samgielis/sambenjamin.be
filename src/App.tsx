@@ -43,7 +43,7 @@ class App extends React.Component<{}, AppState> {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/s/">Stories</Link>
+              <Link to="/s">Stories</Link>
             </li>
             <li>
               <Link to="/t">Tags</Link>
