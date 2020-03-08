@@ -12,20 +12,22 @@ import './App.css';
 
 type AppState = {
   hasFullyLoaded: boolean
+  stories: []
 }
 class App extends React.Component<{}, AppState> {
 
   componentWillMount() {
     this.setState({
-      hasFullyLoaded: false
+      hasFullyLoaded: false,
+      stories: []
     });
 
     fetch("/stories.json").then((response) => {
       return response.json();
     }).then((stories) => {
-      console.log(stories);
       this.setState({
-        hasFullyLoaded: true
+        hasFullyLoaded: true,
+        stories: stories
       })
     });
   }
