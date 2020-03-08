@@ -3,24 +3,21 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useRouteMatch
 } from "react-router-dom";
 import TagPage from './components/pages/TagPage';
 import HomePage from './components/pages/HomePage';
 import StoryPage from './components/pages/StoryPage';
 import './App.css';
-import { Story, StoryIndex } from './components/model/Story';
+import { Story, StoryIndex, getStoryID } from './components/model/Story';
+import { downloadJSON } from "./components/util/Utils";
 
 type AppState = {
   hasFullyLoaded: boolean
   stories: Story[]
 }
 
-function downloadJSON(fileName: string): Promise<any> {
-  return fetch(fileName).then((response) => {
-    return response.json();
-  });
-}
 class App extends React.Component<{}, AppState> {
 
   componentWillMount() {
@@ -43,12 +40,24 @@ class App extends React.Component<{}, AppState> {
       })
     });
   }
-  
+
   render() {
     if (!this.state.hasFullyLoaded) {
       return <h1>Getting ready....</h1>;
     }
+    
+    const storyLinks = this.state.stories.map((story: Story) => {
+      return <li>
+          <Link to={`/${getStoryID(story)}`}>{getStoryID(story)}</Link>
+      </li>
 
+  })
+    const storyRoutes = this.state.stories.map((story: Story) => {
+      return <Route path={`/${getStoryID(story)}`}>
+          <h1>I am {story.title}</h1>
+      </Route>
+    })
+    
     return (<Router>
       <div>
         <nav>
@@ -57,20 +66,14 @@ class App extends React.Component<{}, AppState> {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/s">Stories</Link>
-            </li>
-            <li>
               <Link to="/t">Tags</Link>
             </li>
+            {storyLinks}
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/s">
-            <StoryPage stories={this.state.stories} />
-          </Route>
+          {storyRoutes}
           <Route path="/t">
             <TagPage />
           </Route>
