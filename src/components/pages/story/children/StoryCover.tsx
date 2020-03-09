@@ -22,9 +22,9 @@ export function StoryCover(props: StoryCoverProps) {
                     <h2>{props.story.subTitle}</h2>
                 </div>
                 <div className="author-details">
-                    <Link to={"/"}>
+                    {/*<Link to={"/"}>
                         <img alt="Author portrait" src="/profile.png"></img>
-                    </Link>
+    </Link>*/}
                     <div>
                         <span>By <Link className="author-name" to={'/'}>Sam Benjamin</Link></span>
                     </div>
