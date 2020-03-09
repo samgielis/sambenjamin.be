@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import TagPage from './components/pages/TagPage';
-import HomePage from './components/pages/HomePage';
+import {HomePage} from './components/pages/HomePage';
 import StoryPage from './components/pages/story/StoryPage';
 import './App.css';
 import { Story, StoryIndex, getStoryID } from './components/model/Story';
@@ -66,7 +66,7 @@ class App extends React.Component<{}, AppState> {
             <TagPage />
           </Route>
           <Route path="/">
-            <HomePage />
+            <HomePage stories={this.state.stories}/>
           </Route>
         </Switch>
         <nav>
