@@ -16,3 +16,7 @@ export type Story = {
 export function getStoryID(story: Story): string {
     return story.title.split(" ").join("-").toLowerCase();
 }
+
+export function getStoryCoverImageURL(story: Story): string {
+    return `stories/${getStoryID(story)}/cover.jpg`
+}

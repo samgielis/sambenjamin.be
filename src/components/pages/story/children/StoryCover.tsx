@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, getStoryID } from "../../../model/Story";
+import { Story, getStoryCoverImageURL } from "../../../model/Story";
 import { Container, Row, Col } from 'react-bootstrap';
 import './StoryCover.css';
 import { Link } from 'react-router-dom';
@@ -15,7 +15,7 @@ export function StoryCover(props: StoryCoverProps) {
         <div className="story-cover">
 
             <Container className="d-flex flex-column align-items-center ">
-                <div className="cover-photo" style={{ backgroundImage: `url("stories/${getStoryID(props.story)}/cover.jpg")` }}>
+                <div className="cover-photo" style={{ backgroundImage: `url("${getStoryCoverImageURL(props.story)}")` }}>
                 </div>
                 <div className="story-title-wrapper align-self-center align-items-center">
                     <h1>{props.story.title}</h1>
