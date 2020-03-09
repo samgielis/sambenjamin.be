@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import TagPage from './components/pages/TagPage';
 import HomePage from './components/pages/HomePage';
-import StoryPage from './components/pages/StoryPage';
+import StoryPage from './components/pages/story/StoryPage';
 import './App.css';
 import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
@@ -59,6 +59,16 @@ class App extends React.Component<{}, AppState> {
 
     return (<Router>
       <div>
+
+        <Switch>
+          {storyRoutes}
+          <Route path="/t">
+            <TagPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
         <nav>
           <ul>
             <li>
@@ -70,16 +80,6 @@ class App extends React.Component<{}, AppState> {
             {storyLinks}
           </ul>
         </nav>
-
-        <Switch>
-          {storyRoutes}
-          <Route path="/t">
-            <TagPage />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-        </Switch>
       </div>
     </Router>);
   }

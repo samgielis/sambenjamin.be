@@ -1,0 +1,77 @@
+.story-cover {
+    color: white;
+    font-weight: 400;
+    background-color: black;
+    text-align: center;
+    padding: none !important;
+    margin: none !important;
+}
+
+.story-cover .container {
+    height: 100vh;
+}
+
+.story-cover a {
+    text-decoration: none;
+    color: white;
+}
+
+.story-cover a:hover {
+    color: rgb(204, 204, 204);
+}
+
+.cover-photo {
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    opacity: 50%;
+}
+
+.story-title-wrapper {
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    padding-bottom: 3em;
+}
+
+.story-title-wrapper h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.story-title-wrapper h2 {
+    color: white;
+    font-style: italic;
+    font-size: 32px;
+    font-family: serif;
+}
+
+.author-details {
+    position: absolute;
+    bottom: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.author-details img {
+    padding-bottom: 1em;
+}
+
+.author-name {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.post-date {
+    margin-top: 0.8em;
+    font-family: "EB Garamond", serif;
+    font-feature-settings: "kern";
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+}
