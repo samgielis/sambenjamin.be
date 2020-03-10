@@ -1,12 +1,14 @@
 import React from 'react';
 import { Story, getStoryCoverImageURL } from "../../../model/Story";
+import { Author } from "../../../model/Author";
 import { Container, Row, Col } from 'react-bootstrap';
 import './StoryCover.css';
 import { Link } from 'react-router-dom';
 import { getNameOfMonth, getDateOrdinal } from '../../../util/Utils';
 
 export type StoryCoverProps = {
-    story: Story
+    story: Story,
+    author: Author
 }
 
 export function StoryCover(props: StoryCoverProps) {
@@ -26,7 +28,7 @@ export function StoryCover(props: StoryCoverProps) {
                         <img alt="Author portrait" src="/profile.png"></img>
     </Link>*/}
                     <div>
-                        <span>By <Link className="author-name" to={'/'}>Sam Benjamin</Link></span>
+                        <span>By <Link className="author-name" to={'/'}>{props.author.name}</Link></span>
                     </div>
                     <div className="post-date">
                         {getNameOfMonth(date)} {date.getDate()}<sup>{getDateOrdinal(date)}</sup>, <span>{date.getFullYear()}</span>

@@ -11,6 +11,7 @@ import StoryPage from './components/pages/story/StoryPage';
 import './App.css';
 import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
+import { AUTHOR } from './components/model/Author';
 
 type AppState = {
   hasFullyLoaded: boolean
@@ -53,7 +54,7 @@ class App extends React.Component<{}, AppState> {
     })
     const storyRoutes = this.state.stories.map((story: Story) => {
       return <Route path={`/${getStoryID(story)}`}>
-        <StoryPage story={story}></StoryPage>
+        <StoryPage story={story} author={AUTHOR}></StoryPage>
       </Route>
     })
 
