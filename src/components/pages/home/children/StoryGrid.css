@@ -11,12 +11,23 @@
     padding-bottom: .75em;
 }
 
-.story-thumbnail-image {
+.story-thumbnail-image,
+.story-thumbnail-gradient {
     position: absolute;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+.story-thumbnail-gradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(187, 187, 187, 0) 75%);
+    opacity: .6;
+    transition: opacity .4s;
+}
+
+.story-thumbnail-gradient:hover {
+    opacity: 1;
 }
 
 .story-thumbnail-description {
