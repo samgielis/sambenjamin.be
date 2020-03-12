@@ -6,19 +6,23 @@ import {
   Link
 } from "react-router-dom";
 import TagPage from './components/pages/TagPage';
-import {HomePage} from './components/pages/HomePage';
+import {HomePage} from './components/pages/home/HomePage';
 import StoryPage from './components/pages/story/StoryPage';
 import './App.css';
 import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
-import { AUTHOR } from './components/model/Author';
+import { Author } from './components/model/Author';
+
+type AppProps = {
+  author: Author;
+}
 
 type AppState = {
   hasFullyLoaded: boolean
   stories: Story[]
 }
 
-class App extends React.Component<{}, AppState> {
+class App extends React.Component<AppProps, AppState> {
 
   componentWillMount() {
     this.setState({
@@ -52,9 +56,10 @@ class App extends React.Component<{}, AppState> {
       </li>
 
     })
+
     const storyRoutes = this.state.stories.map((story: Story) => {
       return <Route path={`/${getStoryID(story)}`}>
-        <StoryPage story={story} author={AUTHOR}></StoryPage>
+        <StoryPage story={story} author={this.props.author}></StoryPage>
       </Route>
     })
 
@@ -67,7 +72,7 @@ class App extends React.Component<{}, AppState> {
             <TagPage />
           </Route>
           <Route path="/">
-            <HomePage stories={this.state.stories}/>
+            <HomePage stories={this.state.stories} author={this.props.author}/>
           </Route>
         </Switch>
         <nav>

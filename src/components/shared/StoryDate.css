@@ -1,0 +1,11 @@
+.story-date {
+    margin-top: 0.8em;
+    font-family: "EB Garamond", serif;
+    font-feature-settings: "kern";
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

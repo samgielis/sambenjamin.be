@@ -4,7 +4,7 @@ import { Author } from "../../../model/Author";
 import { Container, Row, Col } from 'react-bootstrap';
 import './StoryCover.css';
 import { Link } from 'react-router-dom';
-import { getNameOfMonth, getDateOrdinal } from '../../../util/Utils';
+import {StoryDate} from "../../../shared/StoryDate";
 
 export type StoryCoverProps = {
     story: Story,
@@ -12,7 +12,6 @@ export type StoryCoverProps = {
 }
 
 export function StoryCover(props: StoryCoverProps) {
-    const date = new Date(props.story.date);
     return (
         <div className="story-cover">
 
@@ -30,9 +29,7 @@ export function StoryCover(props: StoryCoverProps) {
                     <div>
                         <span>By <Link className="author-name" to={'/'}>{props.author.name}</Link></span>
                     </div>
-                    <div className="post-date">
-                        {getNameOfMonth(date)} {date.getDate()}<sup>{getDateOrdinal(date)}</sup>, <span>{date.getFullYear()}</span>
-                    </div>
+                    <StoryDate date={props.story.date}></StoryDate>
                 </div>
             </Container>
         </div>
