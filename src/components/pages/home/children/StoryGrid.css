@@ -53,3 +53,7 @@
     text-decoration: none;
     color: white;
 }
+
+.story-thumbnail.empty {
+    background-color: whitesmoke;
+}

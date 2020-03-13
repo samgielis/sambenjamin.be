@@ -25,9 +25,13 @@ export function StoryGrid(props: StoryGridProps) {
     });
 
     const rows = [];
-    for (let i = 0; i < cols.length; i += 3) {
-        const colsInRow = [cols[i], cols[i + 1], cols[i + 2]].filter((value) => { return value !== undefined });
-        rows.push(<Row key={i}>{colsInRow}</Row>);
+    for (let i = 0; i < cols.length; i+=3) {
+        const thumbnailsInRow =[];
+        thumbnailsInRow.push(<StoryThumbnail key={i} story={props.stories[i]} />)
+        thumbnailsInRow.push(<StoryThumbnail key={i+1} story={props.stories[i+1]} />)
+        thumbnailsInRow.push(<StoryThumbnail key={i+2} story={props.stories[i+2]} />)
+        //const colsInRow = [cols[i], cols[i + 1], cols[i + 2]].filter((value) => { return value !== undefined });
+        rows.push(<Row key={i}>{thumbnailsInRow}</Row>);
     }
 
     return (
@@ -38,10 +42,16 @@ export function StoryGrid(props: StoryGridProps) {
 }
 
 type StoryThumbnailProps = {
-    story: Story
+    story?: Story
 }
 
 function StoryThumbnail(props: StoryThumbnailProps) {
+    if (!props.story) {
+        return <Col md={4} className={"story-thumbnail-wrapper"}>
+            <div className={"story-thumbnail empty"}></div>
+        </Col>
+    }
+
     return <Col md={4} className={"story-thumbnail-wrapper"}>
         <Link to={`/${getStoryID(props.story)}`}>
             <div className={"story-thumbnail"}>
