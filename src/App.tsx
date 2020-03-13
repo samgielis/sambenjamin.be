@@ -75,17 +75,6 @@ class App extends React.Component<AppProps, AppState> {
             <HomePage stories={this.state.stories} author={this.props.author}/>
           </Route>
         </Switch>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/t">Tags</Link>
-            </li>
-            {storyLinks}
-          </ul>
-        </nav>
       </div>
     </Router>);
   }
