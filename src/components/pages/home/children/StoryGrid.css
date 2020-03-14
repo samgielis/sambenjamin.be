@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.col-md-4 {
+*[class*='col-'] {
     padding-top: .75em;
     padding-bottom: .75em;
 }

@@ -9,7 +9,8 @@ export type Story = {
     subTitle?: string,
     description?: string,
     date: string,
-    photos: Photo[]
+    photos: Photo[],
+    layout: number[],
     tags: string[]
 }
 
