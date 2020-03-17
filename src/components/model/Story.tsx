@@ -8,6 +8,7 @@ export type Story = {
     title: string,
     subTitle?: string,
     description?: string,
+    instaHandle?: string,
     date: string,
     photos: Photo[],
     layout: number[],
