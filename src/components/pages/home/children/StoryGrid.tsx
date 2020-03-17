@@ -62,7 +62,7 @@ function StoryThumbnail(props: StoryThumbnailProps) {
                         <Link to={`/${getStoryID(props.story)}`}>{props.story.title}</Link>
                     </h2>
                     <h3>
-                        {props.story.subTitle || "Read more"}
+                        {props.story.subTitle || "See more"}
                     </h3>
                     <StoryDate date={props.story.date} />
                 </div>
