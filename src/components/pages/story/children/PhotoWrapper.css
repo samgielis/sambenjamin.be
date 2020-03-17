@@ -1,0 +1,23 @@
+.photo-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-details {
+    transition: bottom .5s;
+    bottom: -4rem;
+    position: absolute;
+    margin: auto;
+    background-color: #0000006b;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.photo-wrapper:hover .photo-details {
+    bottom: 0;
+}
+
+.photo-details p {
+    padding-top: 1rem;
+}
