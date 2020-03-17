@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./PhotoSet.css"
 import { getStoryID, Story } from "../../../model/Story";
+import {PhotoContainer} from "./PhotoWrapper";
 
 type PhotoSetProps = {
     story: Story;
@@ -18,7 +19,7 @@ export function PhotoSet(props: PhotoSetProps) {
         for (let photoInRow = 0; photoInRow < amountOfPhotosInRow; photoInRow++, iP++) {
             columns.push(
                 <Col key={iP} md={12 / amountOfPhotosInRow}>
-                    <img src={`./stories/${getStoryID(props.story)}/${photos[iP].fileName}`} alt={photos[iP].fileName}></img>
+                    <PhotoContainer imageUrl={`./stories/${getStoryID(props.story)}/${photos[iP].fileName}`} alt={photos[iP].fileName}></PhotoContainer>
                 </Col>
             );
         }
