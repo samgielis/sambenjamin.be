@@ -63,3 +63,8 @@ footer a {
     color: black;
     font-family: serif;
 }
+
+footer a:hover {
+    text-decoration: none;
+    color: black;
+}
