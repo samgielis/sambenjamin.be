@@ -27,13 +27,14 @@ export class PhotoWrapperClass extends React.Component<PhotoWrapperProps, PhotoW
             .then((response) => { return response.arrayBuffer() })
             .then((arrayBuffer) => {
                 const tags = ExifReader.load(arrayBuffer);
+                console.log(tags);
 
                 this.setState({
                     imageData: arrayBuffer,
-                    focalLength: tags["FocalLength"].description,
-                    aperture: tags["ApertureValue"].description,
-                    shutterSpeed: tags["ShutterSpeedValue"].description,
-                    iso: tags["ISOSpeedRatings"].description
+                    focalLength: tags["FocalLength"]?.description,
+                    aperture: tags["ApertureValue"]?.description,
+                    shutterSpeed: tags["ShutterSpeedValue"]?.description,
+                    iso: tags["ISOSpeedRatings"]?.description
                 });
             });
     }
