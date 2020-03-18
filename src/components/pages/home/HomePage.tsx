@@ -21,7 +21,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
         return <div className="homepage">
             <Container style={{ textAlign: "center", padding: "1rem" }}>
                 <p><Link to={"/"}>
-                    <img width="100px" alt="Author portrait" src="/profile.png"></img>
+                    <img width="150px" alt="Author portrait" src="/profile.png"></img>
                 </Link></p>
                 <h1>{this.props.author.name}</h1>
                 <Button href={this.props.author.url} variant="outline-dark">Follow @samgielis</Button>
