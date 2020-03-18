@@ -53,20 +53,22 @@ function StoryThumbnail(props: StoryThumbnailProps) {
     }
 
     return <Col md={4} className={"story-thumbnail-wrapper"}>
-        <Link to={`/${getStoryID(props.story)}`}>
-            <div className={"story-thumbnail"}>
-                <div className="story-thumbnail-image" style={{ backgroundImage: `url(${getStoryCoverImageURL(props.story)}) ` }}></div>
-                <div className="story-thumbnail-gradient" ></div>
-                <div className="story-thumbnail-description">
-                    <h2>
-                        <Link to={`/${getStoryID(props.story)}`}>{props.story.title}</Link>
-                    </h2>
-                    <h3>
-                        {props.story.subTitle || "See more"}
-                    </h3>
-                    <StoryDate date={props.story.date} />
+        <article>
+            <Link to={`/${getStoryID(props.story)}`}>
+                <div className={"story-thumbnail"}>
+                    <div className="story-thumbnail-image" style={{ backgroundImage: `url(${getStoryCoverImageURL(props.story)}) ` }}></div>
+                    <div className="story-thumbnail-gradient" ></div>
+                    <div className="story-thumbnail-description">
+                        <h2>
+                            <Link to={`/${getStoryID(props.story)}`}>{props.story.title}</Link>
+                        </h2>
+                        <h3>
+                            {props.story.subTitle || "See more"}
+                        </h3>
+                        <StoryDate date={props.story.date} />
+                    </div>
                 </div>
-            </div>
-        </Link>
+            </Link>
+        </article>
     </Col>
 }
