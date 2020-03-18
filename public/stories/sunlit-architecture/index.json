@@ -1,0 +1,12 @@
+{
+    "title": "Sunlit Architecture",
+    "subTitle": "a story of light and rhythm",
+    "date": "2020/03/18",
+    "photos": [
+        { "fileName": "cover.jpg" },
+        { "fileName": "1.jpg" },
+        { "fileName": "2.jpg" }
+    ],
+    "layout": [1, 1, 1],
+    "tags": []
+}
