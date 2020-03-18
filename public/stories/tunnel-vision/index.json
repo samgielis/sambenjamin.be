@@ -1,7 +1,6 @@
 {
     "title": "Tunnel Vision",
     "subTitle": "A journey",
-    "description": "This is a description",
     "date": "2020/03/07",
     "photos": [{ "fileName": "1.jpg" }, { "fileName": "2.jpg" }, { "fileName": "3.jpg" }, { "fileName": "4.jpg" }, { "fileName": "5.jpg" }],
     "layout": [3, 2],

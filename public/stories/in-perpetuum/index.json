@@ -1,7 +1,6 @@
 {
     "title": "In Perpetuum",
     "subTitle": "Caught in the eternal void",
-    "description": "This is a description",
     "date": "2020/03/04",
     "photos": [{ "fileName": "1.jpg" }, { "fileName": "2.jpg" }, { "fileName": "3.jpg" }, { "fileName": "cover.jpg" }, { "fileName": "5.jpg" }],
     "layout": [2, 1, 2],
