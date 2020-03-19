@@ -12,6 +12,7 @@ import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
 import { Author } from './components/model/Author';
 import { Container } from 'react-bootstrap';
+import {getLinkForTag } from './components/util/URLUtils';
 
 type AppProps = {
   author: Author;
@@ -62,7 +63,7 @@ class App extends React.Component<AppProps, AppState> {
       const storiesWithTag = this.state.stories.filter((story: Story) => {
         return story.tags?.includes(tag);
       });
-      return <Route path={`/does/${tag}`}>
+      return <Route path={getLinkForTag(tag)}>
         <TagPage tag={tag} stories={storiesWithTag}></TagPage>
       </Route>
     });

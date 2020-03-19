@@ -1,0 +1,9 @@
+.photoset img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .photoset {
+        padding: 0 10rem;
+    }
+}

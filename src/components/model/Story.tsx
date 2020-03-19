@@ -12,7 +12,7 @@ export type Story = {
     date: string,
     photos: Photo[],
     layout: number[],
-    tags: string[]
+    tags?: string[]
 }
 
 export function getStoryID(story: Story): string {

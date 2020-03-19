@@ -30,5 +30,4 @@ export function getDateOrdinal(date: Date): string {
         case 3: return "rd";
         default: return "th";
     }
-
 }
