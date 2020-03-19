@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, getStoryCoverImageURL } from "../../../model/Story";
 import { Author } from "../../../model/Author";
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import './StoryCover.css';
 import { Link } from 'react-router-dom';
 import {StoryDate} from "../../../shared/StoryDate";
@@ -37,9 +37,6 @@ export function StoryCover(props: StoryCoverProps) {
                     {titles}
                 </div>
                 <div className="author-details">
-                    {/*<Link to={"/"}>
-                        <img alt="Author portrait" src="/profile.png"></img>
-    </Link>*/}
                     <div>
                         <span>By <Link className="author-name" to={'/'}>{props.author.name}</Link></span>
                     </div>

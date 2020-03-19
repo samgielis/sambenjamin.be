@@ -7,13 +7,8 @@ type PhotoWrapperProps = {
     alt: string
 }
 
-export function PhotoWrapper(props: PhotoWrapperProps) {
-    const img = <img src={props.imageUrl} alt={props.alt}></img>;
-    return img;
-}
-
 type PhotoWrapperState = {
-    imageData: ArrayBuffer | undefined
+    imageBlobURL: string | undefined
     focalLength: string | undefined
     aperture: string | undefined
     shutterSpeed: string | undefined
@@ -27,9 +22,10 @@ export class PhotoWrapperClass extends React.Component<PhotoWrapperProps, PhotoW
             .then((response) => { return response.arrayBuffer() })
             .then((arrayBuffer) => {
                 try {
+                    const urlObject = URL.createObjectURL(new Blob([arrayBuffer]));
                     const tags = ExifReader.load(arrayBuffer);
                 this.setState({
-                    imageData: arrayBuffer,
+                    imageBlobURL: urlObject,
                     focalLength: tags["FocalLength"]?.description,
                     aperture: tags["ApertureValue"]?.description,
                     shutterSpeed: tags["ShutterSpeedValue"]?.description,
@@ -43,11 +39,11 @@ export class PhotoWrapperClass extends React.Component<PhotoWrapperProps, PhotoW
 
     componentWillMount() {
         this.setState({});
-        this.loadImage();
+        this.loadImage()
     }
 
     render() {
-        if (!this.state.imageData) {
+        if (!this.state.imageBlobURL) {
             return <div style={{ width: "100%", height: "500px", backgroundColor: "whitesmoke" }}></div>
         }
 
@@ -55,7 +51,7 @@ export class PhotoWrapperClass extends React.Component<PhotoWrapperProps, PhotoW
         const aperture = Number.parseFloat(this.state.aperture || "NaN");
         
         return <div className="photo-wrapper">
-            <img src={this.props.imageUrl} alt={this.props.alt}></img>
+            <img src={this.state.imageBlobURL} alt={this.props.alt}></img>
             <div className='photo-details'>
                 <p>{focalLength} f/{aperture} {this.state.shutterSpeed}s ISO{this.state.iso}</p>
             </div>
