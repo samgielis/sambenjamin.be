@@ -4,9 +4,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import TagPage from './components/pages/TagPage';
 import { HomePage } from './components/pages/home/HomePage';
 import StoryPage from './components/pages/story/StoryPage';
+import TagPage from './components/pages/tags/TagPage';
 import './App.css';
 import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
@@ -45,24 +45,39 @@ class App extends React.Component<AppProps, AppState> {
     });
   }
 
+  get storyRoutes() {
+    return this.state.stories.map((story: Story) => {
+      return <Route path={`/${getStoryID(story)}`}>
+        <StoryPage story={story} author={this.props.author}></StoryPage>
+      </Route>
+    });
+  }
+
+  get tagRoutes() {
+    const tags = this.state.stories.map((story: Story) => {
+      return story.tags || [];
+    }).flat();
+
+    return tags.map((tag: string) => {
+      const storiesWithTag = this.state.stories.filter((story: Story) => {
+        return story.tags?.includes(tag);
+      });
+      return <Route path={`/does/${tag}`}>
+        <TagPage tag={tag} stories={storiesWithTag}></TagPage>
+      </Route>
+    });
+  }
+
   render() {
     if (!this.state.hasFullyLoaded) {
       return <h1>Getting ready....</h1>;
     }
 
-    const storyRoutes = this.state.stories.map((story: Story) => {
-      return <Route path={`/${getStoryID(story)}`}>
-        <StoryPage story={story} author={this.props.author}></StoryPage>
-      </Route>
-    })
-
     return (<Router>
       <div id="sambenjamin.be">
         <Switch>
-          {storyRoutes}
-          <Route path="/t">
-            <TagPage />
-          </Route>
+          {this.storyRoutes}
+          {this.tagRoutes}
           <Route path="/">
             <HomePage stories={this.state.stories} author={this.props.author} />
           </Route>
