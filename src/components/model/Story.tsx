@@ -20,5 +20,5 @@ export function getStoryID(story: Story): string {
 }
 
 export function getStoryCoverImageURL(story: Story): string {
-    return `stories/${getStoryID(story)}/cover.jpg`
+    return `/stories/${getStoryID(story)}/cover.jpg`
 }
