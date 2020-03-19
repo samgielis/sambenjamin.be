@@ -26,9 +26,8 @@ export class PhotoWrapperClass extends React.Component<PhotoWrapperProps, PhotoW
         fetch(this.props.imageUrl)
             .then((response) => { return response.arrayBuffer() })
             .then((arrayBuffer) => {
-                const tags = ExifReader.load(arrayBuffer);
-                console.log(tags);
-
+                try {
+                    const tags = ExifReader.load(arrayBuffer);
                 this.setState({
                     imageData: arrayBuffer,
                     focalLength: tags["FocalLength"]?.description,
@@ -36,6 +35,9 @@ export class PhotoWrapperClass extends React.Component<PhotoWrapperProps, PhotoW
                     shutterSpeed: tags["ShutterSpeedValue"]?.description,
                     iso: tags["ISOSpeedRatings"]?.description
                 });
+                } catch (error) {
+                    console.error("Error parsing "+ this.props.imageUrl);
+                } 
             });
     }
 
