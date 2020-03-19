@@ -8,7 +8,7 @@ type TagSetProps = {
 }
 
 export function TagSet(props: TagSetProps) {
-    return <Container fluid={true} className="photoset" style={{textAlign: "left", marginTop: ".75rem"}}>
+    return <Container fluid={true} className="photoset tagset">
             {props.tags.map((tag) => { return <Tag value={tag}></Tag> })}
     </Container>
 }
@@ -19,5 +19,5 @@ type TagProps = {
 
 function Tag(props: TagProps) {
     // return <span className="tag">#{props.value}</span>
-    return <Button style={{margin: "0 0.2rem 0 0"}} variant="secondary" href={getLinkForTag(props.value)}>#{props.value}</Button>
+    return <Button className={"tag"} variant="secondary" href={getLinkForTag(props.value)}>#{props.value}</Button>
 }

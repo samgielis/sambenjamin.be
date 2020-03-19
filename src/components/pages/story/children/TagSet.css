@@ -1,9 +1,8 @@
-.photoset img {
-    width: 100%;
+.tagset {
+    text-align: "left";
+    margin-top: ".75rem";
 }
 
-@media only screen and (min-width: 768px) {
-    .photoset {
-        padding: 0 10rem;
-    }
+.tagset .tag {
+    margin: "0 0.2rem 0 0"
 }
