@@ -1,0 +1,10 @@
+.go-home {
+    text-decoration: none;
+    color: black;
+}
+
+.go-home:active,
+.go-home:hover {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}

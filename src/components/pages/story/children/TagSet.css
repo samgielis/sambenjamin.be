@@ -1,8 +1,8 @@
 .tagset {
-    text-align: "left";
-    margin-top: ".75rem";
+    text-align: left;
+    margin-top: .75rem;
 }
 
-.tagset .tag {
-    margin: "0 0.2rem 0 0"
+.tagset a.tag {
+    margin: 0 .2rem 0 0
 }
