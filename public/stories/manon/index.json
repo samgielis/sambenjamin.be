@@ -1,8 +1,16 @@
 {
     "title": "Manon",
     "instaHandle": "manonwarnant",
+    "description": "Shoutout to great colleagues.",
     "date": "2020/02/19",
-    "photos": [],
-    "layout": [],
+    "photos": [
+        { "fileName": "11.jpg" }, { "fileName": "12.jpg" },
+        { "fileName": "21.jpg" }, { "fileName": "22.jpg" }, { "fileName": "23.jpg" },
+        { "fileName": "31.jpg" },
+        { "fileName": "41.jpg" }, { "fileName": "cover.jpg" }, { "fileName": "43.jpg" },
+        { "fileName": "52.jpg" }, { "fileName": "51.jpg" }, { "fileName": "53.jpg" },
+        { "fileName": "54.jpg" }, { "fileName": "61.jpg" }
+    ],
+    "layout": [2, 3, 1, 3, 3, 2],
     "tags": ["portrait"]
 }
