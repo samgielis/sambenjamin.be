@@ -8,5 +8,5 @@
         { "fileName": "21.jpg" }, { "fileName": "22.jpg" }
     ],
     "layout": [2, 3, 2],
-    "tags": []
+    "tags": ["portrait"]
 }
