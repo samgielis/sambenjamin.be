@@ -1,0 +1,12 @@
+{
+    "title": "Ine & Ben",
+    "subTitle": "Love in the south of France",
+    "date": "2019/07/19",
+    "photos": [
+        { "fileName": "cover.jpg" }, { "fileName": "12.jpg" },
+        { "fileName": "2.jpg" },
+        { "fileName": "31.jpg" }, { "fileName": "32.jpg" }, { "fileName": "cover.jpg" }
+    ],
+    "layout": [2, 1, 2],
+    "tags": ["portrait", "couple"]
+}

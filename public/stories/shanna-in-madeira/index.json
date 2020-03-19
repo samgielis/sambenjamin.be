@@ -1,0 +1,13 @@
+{
+    "title": "Shanna in Madeira",
+    "instaHandle": "shannaverspreet",
+    "date": "2019/11/07",
+    "photos": [
+        { "fileName": "1.jpg" },
+        { "fileName": "21.jpg" }, { "fileName": "22.jpg" },
+        { "fileName": "31.jpg" }, { "fileName": "32.jpg" }, { "fileName": "33.jpg" },
+        { "fileName": "cover.jpg" }
+    ],
+    "layout": [1, 2, 3, 1],
+    "tags": ["portrait"]
+}
