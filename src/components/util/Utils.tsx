@@ -35,8 +35,7 @@ export function getDateOrdinal(date: Date): string {
 }
 
 export function trackPageView(url: string) {
-    if (window.location.hostname.indexOf("localhost") > -1) {
-        return;
+    if (process.env.NODE_ENV === 'production') {
+        ReactGA.pageview(url);
     }
-    ReactGA.pageview(url);
 }

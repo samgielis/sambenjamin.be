@@ -12,7 +12,7 @@ import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
 import { Author } from './components/model/Author';
 import { Footer } from './components/Footer';
-import { getLinkForTag } from './components/util/URLUtils';
+import { getLinkForTag, makeURL } from './components/util/URLUtils';
 
 type AppProps = {
   author: Author;
@@ -33,10 +33,10 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   componentDidMount() {
-    downloadJSON("./stories/index.json").then(async (storyIndex: StoryIndex) => {
+    downloadJSON(makeURL("stories/index.json")).then(async (storyIndex: StoryIndex) => {
       const stories = [];
       for (let storyID of storyIndex.stories) {
-        const story = await downloadJSON(`./stories/${storyID}/index.json`);
+        const story = await downloadJSON(makeURL(`stories/${storyID}/index.json`));
         stories.push(story);
       }
       this.setState({
@@ -74,7 +74,9 @@ class App extends React.Component<AppProps, AppState> {
       return <h1>Getting ready....</h1>;
     }
 
-    return (<Router basename="https://samgielis.github.io/sambenjamin.be/">
+    const basename = process.env.NODE_ENV === "production" ? "//samgielis.github.io/sambenjamin.be/" : "";
+
+    return (<Router basename={basename}>
       <div id="sambenjamin.be">
         <Switch>
           {this.storyRoutes}
