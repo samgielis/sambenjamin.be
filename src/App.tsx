@@ -14,6 +14,7 @@ import { downloadJSON } from "./components/util/Utils";
 import { Author } from './components/model/Author';
 import { Footer } from './components/Footer';
 import { getLinkForTag, makeURL } from './components/util/URLUtils';
+import ScrollToTop from "./components/ScrollToTop";
 
 type AppProps = {
   author: Author;
@@ -50,7 +51,10 @@ class App extends React.Component<AppProps, AppState> {
   get storyRoutes() {
     return this.state.stories.map((story: Story) => {
       return <Route path={`/${getStoryID(story)}`}>
-        <StoryPage story={story} author={this.props.author}></StoryPage>
+        <ScrollToTop>
+          <StoryPage story={story} author={this.props.author}></StoryPage>
+        </ScrollToTop>
+
       </Route>
     });
   }
@@ -65,7 +69,9 @@ class App extends React.Component<AppProps, AppState> {
         return story.tags?.includes(tag);
       });
       return <Route path={getLinkForTag(tag)}>
-        <TagPage tag={tag} stories={storiesWithTag}></TagPage>
+        <ScrollToTop>
+          <TagPage tag={tag} stories={storiesWithTag}></TagPage>
+        </ScrollToTop>
       </Route>
     });
   }
@@ -76,10 +82,10 @@ class App extends React.Component<AppProps, AppState> {
     }
 
     let basename = "/";
-    
+
     if (process.env.NODE_ENV === "production") {
       basename = "//samgielis.github.io/sambenjamin.be/";
-    } 
+    }
 
     const redirectParameter = new URLSearchParams(window.location.search).get("r");
     let redirecter;
@@ -96,7 +102,9 @@ class App extends React.Component<AppProps, AppState> {
           {this.storyRoutes}
           {this.tagRoutes}
           <Route path="/">
-            <HomePage stories={this.state.stories} author={this.props.author} />
+            <ScrollToTop>
+              <HomePage stories={this.state.stories} author={this.props.author} />
+            </ScrollToTop>
           </Route>
         </Switch>
         <Footer author={this.props.author}></Footer>
