@@ -33,10 +33,10 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   componentDidMount() {
-    downloadJSON("/stories/index.json").then(async (storyIndex: StoryIndex) => {
+    downloadJSON("./stories/index.json").then(async (storyIndex: StoryIndex) => {
       const stories = [];
       for (let storyID of storyIndex.stories) {
-        const story = await downloadJSON(`/stories/${storyID}/index.json`);
+        const story = await downloadJSON(`./stories/${storyID}/index.json`);
         stories.push(story);
       }
       this.setState({
