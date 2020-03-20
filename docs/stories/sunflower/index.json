@@ -1,0 +1,11 @@
+{
+    "title": "Sunflower",
+    "instaHandle": "shannaverspreet",
+    "date": "2019/08/16",
+    "photos": [
+        { "fileName": "1.jpg" },
+        { "fileName": "2.jpg" }, { "fileName": "cover.jpg" }
+    ],
+    "layout": [2, 1],
+    "tags": ["portrait"]
+}

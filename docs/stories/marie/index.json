@@ -1,0 +1,12 @@
+{
+    "title": "Marie",
+    "instaHandle": "mariegarre",
+    "date": "2020/03/13",
+    "photos": [
+        { "fileName": "11.jpg" }, { "fileName": "12.jpg" },
+        { "fileName": "1.jpg" }, { "fileName": "2.jpg" }, { "fileName": "3.jpg" },
+        { "fileName": "21.jpg" }, { "fileName": "22.jpg" }
+    ],
+    "layout": [2, 3, 2],
+    "tags": ["portrait"]
+}
