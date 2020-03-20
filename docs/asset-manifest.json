@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sambenjamin.be/static/css/main.3002f1a6.chunk.css",
-    "main.js": "/sambenjamin.be/static/js/main.c126f192.chunk.js",
-    "main.js.map": "/sambenjamin.be/static/js/main.c126f192.chunk.js.map",
+    "main.js": "/sambenjamin.be/static/js/main.c164a4eb.chunk.js",
+    "main.js.map": "/sambenjamin.be/static/js/main.c164a4eb.chunk.js.map",
     "runtime-main.js": "/sambenjamin.be/static/js/runtime-main.db98f80d.js",
     "runtime-main.js.map": "/sambenjamin.be/static/js/runtime-main.db98f80d.js.map",
     "static/js/2.f7399bf3.chunk.js": "/sambenjamin.be/static/js/2.f7399bf3.chunk.js",
     "static/js/2.f7399bf3.chunk.js.map": "/sambenjamin.be/static/js/2.f7399bf3.chunk.js.map",
     "index.html": "/sambenjamin.be/index.html",
-    "precache-manifest.0e0020ff2b7c24d6ab3be6bfc016d222.js": "/sambenjamin.be/precache-manifest.0e0020ff2b7c24d6ab3be6bfc016d222.js",
+    "precache-manifest.aca42b5ae9443b338a804f0d1a9706f4.js": "/sambenjamin.be/precache-manifest.aca42b5ae9443b338a804f0d1a9706f4.js",
     "service-worker.js": "/sambenjamin.be/service-worker.js",
     "static/css/main.3002f1a6.chunk.css.map": "/sambenjamin.be/static/css/main.3002f1a6.chunk.css.map",
     "static/js/2.f7399bf3.chunk.js.LICENSE.txt": "/sambenjamin.be/static/js/2.f7399bf3.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.db98f80d.js",
     "static/js/2.f7399bf3.chunk.js",
     "static/css/main.3002f1a6.chunk.css",
-    "static/js/main.c126f192.chunk.js"
+    "static/js/main.c164a4eb.chunk.js"
   ]
 }
