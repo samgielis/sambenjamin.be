@@ -87,7 +87,7 @@ class App extends React.Component<AppProps, AppState> {
     let basename = "/";
 
     if (process.env.NODE_ENV === "production") {
-      basename = "//samgielis.github.io/sambenjamin.be/";
+      //basename = "//sambenjamin.be/";
     }
 
     const redirectParameter = new URLSearchParams(window.location.search).get("r");
