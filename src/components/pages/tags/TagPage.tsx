@@ -5,6 +5,7 @@ import { StoryGrid } from '../home/children/StoryGrid';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import "./TagPage.css";
+import { trackPageView } from '../../util/Utils';
 
 export type TagPageProps = {
   tag: string
@@ -15,6 +16,7 @@ class TagPage extends React.Component<TagPageProps, {}> {
 
   componentDidMount() {
     document.title = `Stories tagged #${this.props.tag} - sambenjamin.be`;
+    trackPageView(window.location.pathname + window.location.search);
   }
 
   render() {

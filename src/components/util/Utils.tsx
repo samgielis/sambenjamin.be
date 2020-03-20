@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga';
+
 export function downloadJSON(fileName: string): Promise<any> {
     return fetch(fileName).then((response) => {
         return response.json();
@@ -30,4 +32,11 @@ export function getDateOrdinal(date: Date): string {
         case 3: return "rd";
         default: return "th";
     }
+}
+
+export function trackPageView(url: string) {
+    if (window.location.hostname.indexOf("localhost") > -1) {
+        return;
+    }
+    ReactGA.pageview(url);
 }

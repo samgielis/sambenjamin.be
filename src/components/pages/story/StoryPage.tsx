@@ -5,6 +5,7 @@ import { Author } from "../../model/Author";
 import { PhotoSet } from './children/PhotoSet';
 import { TagSet } from './children/TagSet';
 import { StoryDescription } from './children/StoryDescription';
+import { trackPageView } from '../../util/Utils';
 
 export type StoryPageProps = {
   story: Story;
@@ -15,6 +16,7 @@ class StoryPage extends React.Component<StoryPageProps, {}> {
 
   componentDidMount() {
     document.title = `${this.props.story.title} by ${this.props.author.name} - sambenjamin.be`;
+    trackPageView(window.location.pathname + window.location.search);
   }
 
   render() {

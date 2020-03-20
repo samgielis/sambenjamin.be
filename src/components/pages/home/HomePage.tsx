@@ -5,6 +5,7 @@ import { Author } from '../../model/Author';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
 import { Container, Button } from 'react-bootstrap';
+import { trackPageView } from '../../util/Utils';
 
 export type HomePageProps = {
     stories: Story[];
@@ -14,7 +15,8 @@ export type HomePageProps = {
 export class HomePage extends React.Component<HomePageProps, {}> {
 
     componentDidMount() {
-        document.title = 'Sam Benjamin';
+        document.title = 'Home - sambenjamin.be';
+        trackPageView(window.location.pathname + window.location.search);
     }
 
     render() {
