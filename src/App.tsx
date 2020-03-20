@@ -15,6 +15,7 @@ import { Author } from './components/model/Author';
 import { Footer } from './components/Footer';
 import { getLinkForTag, makeURL } from './components/util/URLUtils';
 import ScrollToTop from "./components/ScrollToTop";
+import { Container } from 'react-bootstrap';
 
 type AppProps = {
   author: Author;
@@ -78,7 +79,9 @@ class App extends React.Component<AppProps, AppState> {
 
   render() {
     if (!this.state.hasFullyLoaded) {
-      return <h1>Getting ready....</h1>;
+      return <Container className="loadscreen" fluid={true}>
+        <h1>Cleaning my lens...</h1>
+      </Container>;
     }
 
     let basename = "/";
