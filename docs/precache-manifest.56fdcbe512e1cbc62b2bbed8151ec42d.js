@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "386956d75d0396e358a61dcfc179e4bc",
+    "revision": "96b7744c4afc9f4e76e0731ca0eb1b35",
     "url": "/sambenjamin.be/index.html"
   },
   {
-    "revision": "06b3d95db616a8a16634",
+    "revision": "bf6f602ff6418944c4e7",
     "url": "/sambenjamin.be/static/css/main.0585d875.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sambenjamin.be/static/js/2.701b47e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06b3d95db616a8a16634",
-    "url": "/sambenjamin.be/static/js/main.666ae349.chunk.js"
+    "revision": "bf6f602ff6418944c4e7",
+    "url": "/sambenjamin.be/static/js/main.aa9339b4.chunk.js"
   },
   {
     "revision": "b4861bb694462eb1b521",

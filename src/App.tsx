@@ -84,7 +84,7 @@ class App extends React.Component<AppProps, AppState> {
     const redirectParameter = new URLSearchParams(window.location.search).get("r");
     let redirecter;
     if (redirectParameter) {
-      redirecter = <Redirect to={redirectParameter} />
+      redirecter = <Redirect to={redirectParameter?.replace("/sambenjamin.be", "")} />
     } else redirecter = <div></div>
 
     return (<Router basename={basename}>
