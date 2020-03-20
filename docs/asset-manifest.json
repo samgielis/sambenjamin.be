@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sambenjamin.be/static/css/main.cba712ad.chunk.css",
-    "main.js": "/sambenjamin.be/static/js/main.989c8e64.chunk.js",
-    "main.js.map": "/sambenjamin.be/static/js/main.989c8e64.chunk.js.map",
+    "main.css": "/sambenjamin.be/static/css/main.0585d875.chunk.css",
+    "main.js": "/sambenjamin.be/static/js/main.c0c9ec75.chunk.js",
+    "main.js.map": "/sambenjamin.be/static/js/main.c0c9ec75.chunk.js.map",
     "runtime-main.js": "/sambenjamin.be/static/js/runtime-main.db98f80d.js",
     "runtime-main.js.map": "/sambenjamin.be/static/js/runtime-main.db98f80d.js.map",
     "static/js/2.4c687430.chunk.js": "/sambenjamin.be/static/js/2.4c687430.chunk.js",
     "static/js/2.4c687430.chunk.js.map": "/sambenjamin.be/static/js/2.4c687430.chunk.js.map",
     "index.html": "/sambenjamin.be/index.html",
-    "precache-manifest.fc35359969bdc4f202ab945465f437fd.js": "/sambenjamin.be/precache-manifest.fc35359969bdc4f202ab945465f437fd.js",
+    "precache-manifest.d9a1a90684cb7c9d2abd987cccb4db7c.js": "/sambenjamin.be/precache-manifest.d9a1a90684cb7c9d2abd987cccb4db7c.js",
     "service-worker.js": "/sambenjamin.be/service-worker.js",
-    "static/css/main.cba712ad.chunk.css.map": "/sambenjamin.be/static/css/main.cba712ad.chunk.css.map",
+    "static/css/main.0585d875.chunk.css.map": "/sambenjamin.be/static/css/main.0585d875.chunk.css.map",
     "static/js/2.4c687430.chunk.js.LICENSE.txt": "/sambenjamin.be/static/js/2.4c687430.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.db98f80d.js",
     "static/js/2.4c687430.chunk.js",
-    "static/css/main.cba712ad.chunk.css",
-    "static/js/main.989c8e64.chunk.js"
+    "static/css/main.0585d875.chunk.css",
+    "static/js/main.c0c9ec75.chunk.js"
   ]
 }
