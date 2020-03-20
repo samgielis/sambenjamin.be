@@ -84,8 +84,10 @@ class App extends React.Component<AppProps, AppState> {
     const redirectParameter = new URLSearchParams(window.location.search).get("r");
     let redirecter;
     if (redirectParameter) {
-      redirecter = <Redirect to={redirectParameter?.replace("/sambenjamin.be", "")} />
-    } else redirecter = <div></div>
+      redirecter = <Redirect to={redirectParameter?.replace("/sambenjamin.be", "")} />;
+    } else {
+      redirecter = <div></div>;
+    }
 
     return (<Router basename={basename}>
       {redirecter}
@@ -93,7 +95,7 @@ class App extends React.Component<AppProps, AppState> {
         <Switch>
           {this.storyRoutes}
           {this.tagRoutes}
-          <Route exact path="/">
+          <Route path="/">
             <HomePage stories={this.state.stories} author={this.props.author} />
           </Route>
         </Switch>
