@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import { HomePage } from './components/pages/home/HomePage';
 import StoryPage from './components/pages/story/StoryPage';
@@ -74,14 +75,25 @@ class App extends React.Component<AppProps, AppState> {
       return <h1>Getting ready....</h1>;
     }
 
-    const basename = process.env.NODE_ENV === "production" ? "//samgielis.github.io/sambenjamin.be/" : "";
+    let basename = "/";
+    
+    if (process.env.NODE_ENV === "production") {
+      basename = "//samgielis.github.io/sambenjamin.be/";
+    } 
+
+    const redirectParameter = new URLSearchParams(window.location.search).get("r");
+    let redirecter;
+    if (redirectParameter) {
+      redirecter = <Redirect to={redirectParameter} />
+    } else redirecter = <div></div>
 
     return (<Router basename={basename}>
+      {redirecter}
       <div id="sambenjamin.be">
         <Switch>
           {this.storyRoutes}
           {this.tagRoutes}
-          <Route path="/">
+          <Route exact path="/">
             <HomePage stories={this.state.stories} author={this.props.author} />
           </Route>
         </Switch>

@@ -26,8 +26,11 @@
 
     <title>React App</title>
     <script>
-        alert(window.location.href)
-            // window.location.href = "https://samgielis.github.io/sambenjamin.be/";
+        let baseurl = "/"
+        if (window.location.href.indexOf("samgielis.github.io") > -1) {
+            baseurl = "https://samgielis.github.io/sambenjamin.be/"
+        }
+        window.location.href = baseurl + "?r=" + encodeURI(window.location.pathname);
     </script>
 </head>
 
