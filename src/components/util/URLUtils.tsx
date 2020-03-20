@@ -1,5 +1,5 @@
 export function getLinkForTag(tag: string): string {
-    return `does/${tag}/`;
+    return `/does/${tag}/`;
 }
 
 export function makeURL(partialURL: string): string {
