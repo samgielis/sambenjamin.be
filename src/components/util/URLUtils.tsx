@@ -3,7 +3,9 @@ export function getLinkForTag(tag: string): string {
 }
 
 export function makeURL(partialURL: string): string {
-    const base = process.env.NODE_ENV === "production" ? "https://samgielis.github.io/sambenjamin.be/" : "/";
-
+    let base = "/";
+    if (process.env.NODE_ENV === "production") {
+        base = "https://samgielis.github.io/sambenjamin.be/";
+    }
     return base + partialURL;
 }
