@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c63c9664e371749ecafb7c34f322faa",
+    "revision": "386956d75d0396e358a61dcfc179e4bc",
     "url": "/sambenjamin.be/index.html"
   },
   {
-    "revision": "dd3a10348c5c588e3584",
+    "revision": "06b3d95db616a8a16634",
     "url": "/sambenjamin.be/static/css/main.0585d875.chunk.css"
   },
   {
-    "revision": "ec58473052a6dce7df2e",
-    "url": "/sambenjamin.be/static/js/2.4c687430.chunk.js"
+    "revision": "2f4a9542b2510fdd0b20",
+    "url": "/sambenjamin.be/static/js/2.701b47e4.chunk.js"
   },
   {
     "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/sambenjamin.be/static/js/2.4c687430.chunk.js.LICENSE.txt"
+    "url": "/sambenjamin.be/static/js/2.701b47e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd3a10348c5c588e3584",
-    "url": "/sambenjamin.be/static/js/main.c0c9ec75.chunk.js"
+    "revision": "06b3d95db616a8a16634",
+    "url": "/sambenjamin.be/static/js/main.666ae349.chunk.js"
   },
   {
     "revision": "b4861bb694462eb1b521",
