@@ -11,8 +11,8 @@ import './App.css';
 import { Story, StoryIndex, getStoryID } from './components/model/Story';
 import { downloadJSON } from "./components/util/Utils";
 import { Author } from './components/model/Author';
-import { Container } from 'react-bootstrap';
-import {getLinkForTag } from './components/util/URLUtils';
+import { Footer } from './components/Footer';
+import { getLinkForTag } from './components/util/URLUtils';
 
 type AppProps = {
   author: Author;
@@ -83,24 +83,10 @@ class App extends React.Component<AppProps, AppState> {
             <HomePage stories={this.state.stories} author={this.props.author} />
           </Route>
         </Switch>
-        <WebsiteCredits author={this.props.author}></WebsiteCredits>
+        <Footer author={this.props.author}></Footer>
       </div>
     </Router>);
   }
 }
 
 export default App;
-
-type WebsiteCreditsProps = {
-  author: Author
-}
-
-function WebsiteCredits(props: WebsiteCreditsProps) {
-  return <footer>
-    <Container fluid={true}>
-      <div className="footer-spacer">
-      </div>
-      <p>© {new Date().getFullYear()} <a href='/'>{props.author.name}</a></p>
-    </Container>
-  </footer>
-}
