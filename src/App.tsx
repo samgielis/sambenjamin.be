@@ -74,7 +74,7 @@ class App extends React.Component<AppProps, AppState> {
       return <h1>Getting ready....</h1>;
     }
 
-    return (<Router>
+    return (<Router basename="https://samgielis.github.io/sambenjamin.be/">
       <div id="sambenjamin.be">
         <Switch>
           {this.storyRoutes}
