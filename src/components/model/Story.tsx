@@ -1,4 +1,5 @@
 import { Photo } from "./Photo";
+import { makeURL } from "../util/URLUtils";
 
 export type StoryIndex = {
     stories: string[]
@@ -20,5 +21,5 @@ export function getStoryID(story: Story): string {
 }
 
 export function getStoryCoverImageURL(story: Story): string {
-    return `/stories/${getStoryID(story)}/cover.jpg`
+    return makeURL(`stories/${getStoryID(story)}/cover.jpg`);
 }
