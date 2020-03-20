@@ -1,0 +1,10 @@
+{
+    "title": "Silo",
+    "subTitle": "Orchestrated decay",
+    "date": "2020/03/18",
+    "photos": [
+        { "fileName": "2.jpg" }, { "fileName": "3.jpg" }, { "fileName": "cover.jpg" }, { "fileName": "1.jpg" }
+    ],
+    "layout": [2, 1, 1],
+    "tags": ["blackandwhite", "architecture"]
+}
