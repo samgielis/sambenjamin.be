@@ -38,15 +38,22 @@
 
 .story-title-wrapper h1 {
     text-transform: uppercase;
-    font-size: 64px;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    .story-title-wrapper h1 {
+        font-size: 64px;
+    }
+    .story-title-wrapper h2 {
+        font-size: 32px;
+    }
 }
 
 .story-title-wrapper h2 {
     color: white;
     font-style: italic;
-    font-size: 32px;
     font-family: serif;
 }
 
