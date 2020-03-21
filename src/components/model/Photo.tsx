@@ -4,4 +4,6 @@ export type Photo = {
     aperture?: string
     iso?: string
     focalLength?: string
+    width?: number
+    height?: number
 }
