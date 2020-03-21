@@ -32,7 +32,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "preprocess-images": "ts-node PreProcessImages.ts"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -54,6 +55,7 @@
         "@types/enzyme-adapter-react-16": "^1.0.6",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.2",
-        "react-test-renderer": "^16.13.0"
+        "react-test-renderer": "^16.13.0",
+        "ts-node": "^8.7.0"
     }
 }
