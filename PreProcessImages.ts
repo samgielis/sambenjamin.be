@@ -13,6 +13,8 @@ type EXIFData = {
     aperture?: string
     shutterSpeed?: string
     iso?: string
+    width?: number
+    height?: number
 }
 
 type AugmentedPhoto = Photo & EXIFData;
@@ -24,11 +26,14 @@ type Story = {
 function readExifData(imageURL: string): EXIFData {
     let rawImageData = FileSystem.readFileSync(imageURL);
     const tags = ExifReader.load(rawImageData);
+
     return {
         focalLength: tags["FocalLength"]?.description,
         aperture: tags["ApertureValue"]?.description,
         shutterSpeed: tags["ShutterSpeedValue"]?.description,
-        iso: tags["ISOSpeedRatings"]?.description
+        iso: tags["ISOSpeedRatings"]?.description,
+        width: tags["Image Width"]?.value,
+        height: tags["Image Height"]?.value
     };
 }
 
@@ -70,10 +75,8 @@ function preProcessStories() {
 function augmentStoryWithExifData(story: Story, storyFolderURI: string): Story {
     for (let photoIndex = 0; photoIndex < story.photos.length; photoIndex++) {
         const photo = story.photos[photoIndex];
-        if (!photo.aperture) {
-            const exifData = readExifData(path.join(storyFolderURI, photo.fileName));
-            story.photos[photoIndex] = { ...photo, ...exifData };
-        }
+        const exifData = readExifData(path.join(storyFolderURI, photo.fileName));
+        story.photos[photoIndex] = { ...photo, ...exifData };
     }
     return story;
 }
