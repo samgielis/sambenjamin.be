@@ -51,7 +51,7 @@ class App extends React.Component<AppProps, AppState> {
 
   get storyRoutes() {
     return this.state.stories.map((story: Story) => {
-      return <Route path={`/${getStoryID(story)}`}>
+      return <Route path={`/${getStoryID(story)}`} key={getStoryID(story)}>
         <ScrollToTop>
           <StoryPage story={story} author={this.props.author}></StoryPage>
         </ScrollToTop>
@@ -69,7 +69,7 @@ class App extends React.Component<AppProps, AppState> {
       const storiesWithTag = this.state.stories.filter((story: Story) => {
         return story.tags?.includes(tag);
       });
-      return <Route path={getLinkForTag(tag)}>
+      return <Route path={getLinkForTag(tag)} key={getLinkForTag(tag)}>
         <ScrollToTop>
           <TagPage tag={tag} stories={storiesWithTag}></TagPage>
         </ScrollToTop>
