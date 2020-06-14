@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import './StoryGrid.css';
 import { Link } from 'react-router-dom';
 import { StoryDate } from '../../../shared/StoryDate';
+import { SmoothLoadingImage } from '../../../shared/SmoothLoadingImage';
 
 function compareStoriesMostRecentFirst(a: Story, b: Story): number {
     if (a.date > b.date) {
@@ -56,7 +57,7 @@ function StoryThumbnail(props: StoryThumbnailProps) {
         <article>
             <Link to={`/${getStoryID(props.story)}`}>
                 <div className={"story-thumbnail"}>
-                    <div className="story-thumbnail-image" style={{ backgroundImage: `url(${getStoryCoverImageURL(props.story)}) ` }}></div>
+                    <SmoothLoadingImage style={{maxWidth: "100%", height: "100%", position: "absolute"}} src={getStoryCoverImageURL(props.story)} alt={props.story.title} />
                     <div className="story-thumbnail-gradient" ></div>
                     <div className="story-thumbnail-description">
                         <h2>
