@@ -1,20 +1,21 @@
 {
-    "stories": [
-        "tunnel-vision",
-        "in-perpetuum",
-        "manon",
-        "marie",
-        "sunlit-architecture",
-        "nico",
-        "shanna-in-madeira",
-        "ine-and-ben",
-        "sunflower",
-        "silo",
-        "self",
-        "horst",
-        "bahar",
-        "tessa",
-        "manon-and-barry",
-        "ziggy-and-family"
-    ]
+  "stories": [
+    "tunnel-vision",
+    "in-perpetuum",
+    "manon",
+    "marie",
+    "sunlit-architecture",
+    "nico",
+    "shanna-in-madeira",
+    "ine-and-ben",
+    "sunflower",
+    "silo",
+    "self",
+    "horst",
+    "bahar",
+    "tessa",
+    "manon-and-barry",
+    "ziggy-and-family",
+    "in-ruins"
+  ]
 }
