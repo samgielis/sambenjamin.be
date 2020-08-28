@@ -1,0 +1,39 @@
+{
+  "title": "In Ruins",
+  "subTitle": "The old Abbey of Villers-la-Ville",
+  "date": "2020/08/19",
+  "photos": [
+    {
+      "fileName": "1.jpg"
+    },
+    {
+      "fileName": "notcover.jpg"
+    },
+    {
+      "fileName": "cover.jpg"
+    },
+    {
+      "fileName": "21.jpg"
+    },
+    {
+      "fileName": "31.jpg"
+    },
+    {
+      "fileName": "33.jpg"
+    },
+    {
+      "fileName": "32.jpg"
+    },
+    {
+      "fileName": "41.jpg"
+    },
+    {
+      "fileName": "42.jpg"
+    },
+    {
+      "fileName": "51.jpg"
+    }
+  ],
+  "layout": [1, 2, 1, 3, 2, 1],
+  "tags": ["monochrome", "architecture", "historical"]
+}
