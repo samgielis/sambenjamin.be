@@ -10,11 +10,30 @@ interface StoryPageTemplateProps {
     allFile: {
       nodes: { childStoryIndex: Story }[];
     };
+    images: {
+      nodes: {
+        base: string;
+        childImageSharp?: {
+          original: {
+            src: string;
+          };
+        };
+      }[];
+    };
   };
 }
 
 const StoryPageTemplate = ({ data }: StoryPageTemplateProps) => {
   const story = data.allFile.nodes[0].childStoryIndex;
+
+  story.photos.forEach((photo) => {
+    data.images.nodes.forEach((node) => {
+      if (node.base === photo.fileName.base) {
+        photo.fileName.base = node.childImageSharp.original.src;
+      }
+    });
+  });
+  
   return (
     <Layout>
       <StoryPage story={story} author={AUTHOR} />
@@ -26,6 +45,21 @@ export default StoryPageTemplate;
 
 export const query = graphql`
   query($slug: String!) {
+    images: allFile(
+      filter: {
+        sourceInstanceName: { eq: "stories" }
+        relativeDirectory: { eq: $slug }
+      }
+    ) {
+      nodes {
+        base
+        childImageSharp {
+          original {
+            src
+          }
+        }
+      }
+    }
     allFile(
       filter: { relativeDirectory: { eq: $slug }, extension: { eq: "json" } }
     ) {

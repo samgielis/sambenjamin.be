@@ -21,5 +21,11 @@ export function getStoryID(story: Story): string {
 }
 
 export function getStoryCoverImageURL(story: Story): string {
-    return makeURL(`stories/${getStoryID(story)}/cover.jpg`);
+    let coverImageUrl = makeURL(`stories/${getStoryID(story)}/cover.jpg`);
+    story.photos.forEach((photo) => {
+        if (photo.fileName.base.indexOf("cover") > -1) {
+            coverImageUrl = photo.fileName.base;
+        }
+    })
+    return coverImageUrl;
 }
