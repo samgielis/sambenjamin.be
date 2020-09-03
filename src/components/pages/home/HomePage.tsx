@@ -1,5 +1,5 @@
 import React from "react";
-import { Story } from "../../model/Story";
+import { Story, getStoryCoverImageURL } from "../../model/Story";
 import { StoryGrid } from "./children/StoryGrid";
 import { Author } from "../../model/Author";
 import "./HomePage.css";
@@ -28,6 +28,9 @@ export class HomePage extends React.Component<HomePageProps, {}> {
           author={this.props.author.name}
           keywords={defaultKeywords}
           description={`Sam Benjamin's photography portfolio`}
+          imageURL={getStoryCoverImageURL(
+            this.props.stories[this.props.stories.length - 1]
+          )}
         />
         <Container style={{ textAlign: "center", padding: "1rem" }}>
           <p>

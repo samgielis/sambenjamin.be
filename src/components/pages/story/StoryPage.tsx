@@ -1,5 +1,5 @@
 import React from "react";
-import { Story } from "../../model/Story";
+import { Story, getStoryCoverImageURL } from "../../model/Story";
 import { StoryCover } from "./children/StoryCover";
 import { Author } from "../../model/Author";
 import { PhotoSet } from "./children/PhotoSet";
@@ -34,6 +34,7 @@ class StoryPage extends React.Component<StoryPageProps, {}> {
           description={`${this.props.story.title} by ${
             this.props.author.name
           }. ${this.props.story.subTitle || ""}`}
+          imageURL={getStoryCoverImageURL(this.props.story)}
         />
         <StoryCover
           story={this.props.story}
