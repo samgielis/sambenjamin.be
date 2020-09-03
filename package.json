@@ -18,6 +18,7 @@
         "exifreader": "^3.12.2",
         "gatsby": "^2.24.53",
         "gatsby-plugin-react-helmet": "^3.3.10",
+        "gatsby-plugin-sitemap": "^2.4.12",
         "gatsby-plugin-typescript": "^2.4.18",
         "gatsby-source-filesystem": "^2.3.27",
         "gatsby-transformer-json": "^2.4.11",

@@ -9,6 +9,7 @@ export const siteMetadata = {
   title: `sambenjamin.be`,
   description: `Sam benjamin's photography portfolio`,
   author: `Sam Gielis <samgielis@gmail.com>`,
+  siteUrl: `https://sambenjamin.be`,
 };
 
 export const plugins = [
@@ -34,7 +35,7 @@ export const plugins = [
   },
   `gatsby-plugin-typescript`,
   `gatsby-plugin-react-helmet`,
-
+  `gatsby-plugin-sitemap`,
   // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
   // `gatsby-plugin-offline`,
