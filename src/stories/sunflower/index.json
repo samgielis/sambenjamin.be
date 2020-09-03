@@ -1,0 +1,41 @@
+{
+	"title": "Sunflower",
+	"instaHandle": "shannaverspreet",
+	"date": "2019/08/16",
+	"photos": [
+		{
+			"fileName": "1.jpg",
+			"focalLength": "85 mm",
+			"aperture": "5.60",
+			"shutterSpeed": "1/640",
+			"iso": 160,
+			"width": 1600,
+			"height": 1067
+		},
+		{
+			"fileName": "2.jpg",
+			"focalLength": "85 mm",
+			"aperture": "4.50",
+			"shutterSpeed": "1/1000",
+			"iso": 160,
+			"width": 1600,
+			"height": 1067
+		},
+		{
+			"fileName": "cover.jpg",
+			"focalLength": "85 mm",
+			"aperture": "4.50",
+			"shutterSpeed": "1/1000",
+			"iso": 160,
+			"width": 1600,
+			"height": 1067
+		}
+	],
+	"layout": [
+		2,
+		1
+	],
+	"tags": [
+		"portrait"
+	]
+}

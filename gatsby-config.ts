@@ -15,8 +15,21 @@ export const plugins = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
+      name: `stories`,
+      path: `${__dirname}/src/stories/`,
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
       name: `src`,
       path: `${__dirname}/src/`,
+    },
+  },
+  {
+    resolve: `gatsby-transformer-json`,
+    options: {
+      typeName: `storyIndex`, // a fixed string
     },
   },
   `gatsby-plugin-typescript`,
