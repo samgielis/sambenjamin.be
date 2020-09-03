@@ -4,6 +4,10 @@ import { Story } from "../components/model/Story";
 import { AUTHOR } from "../components/model/Author";
 import { HomePage } from "../components/pages/home/HomePage";
 import Layout from "../components/Layout";
+import {
+  CoverImageNode,
+  addStaticURLToCoverImages,
+} from "../components/util/Utils";
 
 interface HomePageQueryProps {
   allFile: {
@@ -11,6 +15,9 @@ interface HomePageQueryProps {
       childStoryIndex: Story;
       relativeDirectory: string;
     }[];
+  };
+  coverImages: {
+    nodes: CoverImageNode[];
   };
 }
 
@@ -20,6 +27,9 @@ const Index = ({ data }: IndexPageProps) => {
   const stories = data.allFile.nodes.map(
     (storyNode) => storyNode.childStoryIndex
   );
+
+  addStaticURLToCoverImages(stories, data.coverImages.nodes);
+
   return (
     <Layout>
       <HomePage stories={stories} author={AUTHOR} />
@@ -53,6 +63,21 @@ export const query = graphql`
           tags
         }
         relativeDirectory
+      }
+    }
+    coverImages: allFile(
+      filter: {
+        sourceInstanceName: { eq: "stories" }
+        base: { eq: "cover.jpg" }
+      }
+    ) {
+      nodes {
+        relativeDirectory
+        childImageSharp {
+          original {
+            src
+          }
+        }
       }
     }
   }
