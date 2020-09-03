@@ -6,8 +6,8 @@ import { PhotoSet } from "./children/PhotoSet";
 import { TagSet } from "./children/TagSet";
 import { StoryDescription } from "./children/StoryDescription";
 import { trackPageView } from "../../util/Utils";
-import Helmet from "react-helmet";
 import defaultKeywords from "../../../content/Keywords";
+import SEO from "../../shared/SEO";
 
 export type StoryPageProps = {
   story: Story;
@@ -27,18 +27,14 @@ class StoryPage extends React.Component<StoryPageProps, {}> {
   render() {
     return (
       <div className="story-page">
-        <Helmet
+        <SEO
           title={`${this.props.story.title} by ${this.props.author.name} - sambenjamin.be`}
-        >
-          <meta name="keywords" content={this.keywords.join(", ")} />
-          <meta name="author" content={this.props.author.name} />
-          <meta
-            name="description"
-            content={`${this.props.story.title} by ${this.props.author.name}. ${
-              this.props.story.subTitle || ""
-            }`}
-          />
-        </Helmet>
+          author={this.props.author.name}
+          keywords={this.keywords}
+          description={`${this.props.story.title} by ${
+            this.props.author.name
+          }. ${this.props.story.subTitle || ""}`}
+        />
         <StoryCover
           story={this.props.story}
           author={this.props.author}
