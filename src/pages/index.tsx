@@ -1,10 +1,9 @@
 import React from "react";
 import { PageProps, graphql } from "gatsby";
 import { Story } from "../components/model/Story";
-import ScrollToTop from "../components/ScrollToTop";
 import { AUTHOR } from "../components/model/Author";
 import { HomePage } from "../components/pages/home/HomePage";
-import { Footer } from "../components/Footer";
+import Layout from "../components/Layout";
 
 interface HomePageQueryProps {
   allFile: {
@@ -22,10 +21,9 @@ const Index = ({ data }: IndexPageProps) => {
     (storyNode) => storyNode.childStoryIndex
   );
   return (
-    <ScrollToTop>
+    <Layout>
       <HomePage stories={stories} author={AUTHOR} />
-      <Footer author={AUTHOR}></Footer>
-    </ScrollToTop>
+    </Layout>
   );
 };
 export default Index;
