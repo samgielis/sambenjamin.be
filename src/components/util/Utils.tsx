@@ -61,11 +61,7 @@ export function addStaticURLToCoverImages(
   stories.forEach((story) => {
     coverImages.forEach((coverImage) => {
       if (coverImage.relativeDirectory === getStoryID(story)) {
-        story.photos.forEach((photo) => {
-          if (photo.fileName.base === "cover.jpg") {
-            photo.fileName.base = coverImage.childImageSharp.original.src;
-          }
-        });
+        story.coverURL = coverImage.childImageSharp.original.src;
       }
     });
   });
