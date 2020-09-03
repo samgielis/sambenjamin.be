@@ -3,7 +3,7 @@ import { Story, getStoryCoverImageURL } from "../../model/Story";
 import { StoryGrid } from "./children/StoryGrid";
 import { Author } from "../../model/Author";
 import "./HomePage.css";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import { Container, Button } from "react-bootstrap";
 import { trackPageView } from "../../util/Utils";
 import { makeURL } from "../../util/URLUtils";

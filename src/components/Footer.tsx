@@ -2,7 +2,7 @@ import "./Footer.css"
 import React from 'react';
 import { Author } from './model/Author';
 import { Container } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
 type FooterProps = {
     author: Author

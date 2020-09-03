@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Button } from "react-bootstrap";
 import "./TagSet.css"
 import { getLinkForTag } from "../../../util/URLUtils";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
 type TagSetProps = {
     tags: string[];
