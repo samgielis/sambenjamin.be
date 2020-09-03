@@ -4,11 +4,18 @@ import { Story } from "../components/model/Story";
 import Layout from "../components/Layout";
 import TagPage from "../components/pages/tags/TagPage";
 import { AUTHOR } from "../components/model/Author";
+import {
+  CoverImageNode,
+  addStaticURLToCoverImages,
+} from "../components/util/Utils";
 
 interface TagPageTemplateProps {
   data: {
     allFile: {
       nodes: { childStoryIndex: Story }[];
+    };
+    coverImages: {
+      nodes: CoverImageNode[];
     };
   };
   pageContext: {
@@ -19,6 +26,8 @@ interface TagPageTemplateProps {
 const TagPageTemplate = ({ data, pageContext }: TagPageTemplateProps) => {
   const tag = pageContext.tag;
   const stories = data.allFile.nodes.map((node) => node.childStoryIndex);
+
+  addStaticURLToCoverImages(stories, data.coverImages.nodes);
 
   return (
     <Layout>
@@ -56,6 +65,21 @@ export const query = graphql`
             iso
             shutterSpeed
             width
+          }
+        }
+      }
+    }
+    coverImages: allFile(
+      filter: {
+        sourceInstanceName: { eq: "stories" }
+        base: { eq: "cover.jpg" }
+      }
+    ) {
+      nodes {
+        relativeDirectory
+        childImageSharp {
+          original {
+            src
           }
         }
       }
