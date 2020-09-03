@@ -12,7 +12,7 @@ type PhotoWrapperProps = {
 export function PhotoWrapper(props: PhotoWrapperProps) {
     const focalLength = props.photo.focalLength?.replace(/ /g, '') || "unknown";
     const aperture = Number.parseFloat(props.photo.aperture || "NaN");
-    const imageURL = makeURL(`stories/${props.storyID}/${props.photo.fileName}`);
+    const imageURL = makeURL(`stories/${props.storyID}/${props.photo.fileName.base}`);
     let maintainPhotoAspectRatioStyle = {};
 
     const imageAspectRatio = props.photo.height! / props.photo.width!;
@@ -24,7 +24,7 @@ export function PhotoWrapper(props: PhotoWrapperProps) {
     }
 
     return <div className="photo-wrapper" style={maintainPhotoAspectRatioStyle}>
-        <SmoothLoadingImage src={imageURL} alt={props.photo.fileName}/>
+        <SmoothLoadingImage src={imageURL} alt={props.photo.fileName.base}/>
         <div className='photo-details'>
             <p>{focalLength} f/{aperture} {props.photo.shutterSpeed}s ISO{props.photo.iso}</p>
         </div>
