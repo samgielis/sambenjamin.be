@@ -1,32 +1,38 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./PhotoSet.css"
+import "./PhotoSet.css";
 import { getStoryID, Story } from "../../../model/Story";
 import { PhotoWrapper } from "./PhotoWrapper";
 
 type PhotoSetProps = {
-    story: Story;
-}
+  story: Story;
+};
 
 export function PhotoSet(props: PhotoSetProps) {
-    const photos = props.story.photos;
-    const layout = props.story.layout;
-    const rows = [];
+  const photos = props.story.photos;
+  const layout = props.story.layout;
+  const rows = [];
 
-    for (let iL = 0, iP = 0; iL < layout.length; iL++) {
-        const amountOfPhotosInRow = layout[iL];
-        const columns = [];
-        for (let photoInRow = 0; photoInRow < amountOfPhotosInRow; photoInRow++, iP++) {
-            columns.push(
-                <Col key={iP} md={12 / amountOfPhotosInRow}>
-                    <PhotoWrapper photo={photos[iP]} storyID={getStoryID(props.story)} />
-                </Col>
-            );
-        }
-        const row = <Row>{columns}</Row>;
-        rows.push(row);
+  for (let iL = 0, iP = 0; iL < layout.length; iL++) {
+    const amountOfPhotosInRow = layout[iL];
+    const columns = [];
+    for (
+      let photoInRow = 0;
+      photoInRow < amountOfPhotosInRow;
+      photoInRow++, iP++
+    ) {
+      columns.push(
+        <Col key={iP} md={12 / amountOfPhotosInRow}>
+          <PhotoWrapper photo={photos[iP]} storyID={getStoryID(props.story)} />
+        </Col>
+      );
     }
-    return <Container fluid={true} className="photoset">
-        {rows}
+    const row = <Row key={iL}>{columns}</Row>;
+    rows.push(row);
+  }
+  return (
+    <Container fluid={true} className="photoset">
+      {rows}
     </Container>
+  );
 }
