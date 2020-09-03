@@ -8,7 +8,6 @@ import {
 import { HomePage } from "./components/pages/home/HomePage";
 import StoryPage from "./components/pages/story/StoryPage";
 import TagPage from "./components/pages/tags/TagPage";
-import "./App.css";
 import { Story, StoryIndex, getStoryID } from "./components/model/Story";
 import { downloadJSON } from "./components/util/Utils";
 import { Author } from "./components/model/Author";
