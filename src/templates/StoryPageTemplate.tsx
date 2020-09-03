@@ -20,12 +20,19 @@ interface StoryPageTemplateProps {
         };
       }[];
     };
+    coverImage: {
+      childImageSharp: {
+        original: {
+          src: string;
+        };
+      };
+    };
   };
 }
 
 const StoryPageTemplate = ({ data }: StoryPageTemplateProps) => {
   const story = data.allFile.nodes[0].childStoryIndex;
-
+  story.coverURL = data.coverImage.childImageSharp.original.src;
   story.photos.forEach((photo) => {
     data.images.nodes.forEach((node) => {
       if (node.base === photo.fileName.base) {
@@ -33,7 +40,7 @@ const StoryPageTemplate = ({ data }: StoryPageTemplateProps) => {
       }
     });
   });
-  
+
   return (
     <Layout>
       <StoryPage story={story} author={AUTHOR} />
@@ -83,6 +90,16 @@ export const query = graphql`
             shutterSpeed
             width
           }
+        }
+      }
+    }
+    coverImage: file(
+      relativeDirectory: { eq: $slug }
+      base: { eq: "cover.jpg" }
+    ) {
+      childImageSharp {
+        original {
+          src
         }
       }
     }
