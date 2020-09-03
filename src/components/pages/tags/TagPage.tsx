@@ -19,7 +19,6 @@ export type TagPageProps = {
 class TagPage extends React.Component<TagPageProps, {}> {
   constructor(props: TagPageProps) {
     super(props);
-    console.log("making tagpae");
   }
   componentDidMount() {
     trackPageView(window.location.pathname + window.location.search);
