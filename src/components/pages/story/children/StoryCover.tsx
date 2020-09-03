@@ -3,7 +3,7 @@ import { Story, getStoryCoverImageURL } from "../../../model/Story";
 import { Author } from "../../../model/Author";
 import { Container, Button } from 'react-bootstrap';
 import './StoryCover.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import {StoryDate} from "../../../shared/StoryDate";
 
 export type StoryCoverProps = {
