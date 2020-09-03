@@ -53,7 +53,7 @@ function isStoryFolder(folderURI: string): boolean {
 }
 
 function preProcessStories() {
-    const storiesFolderPath = './public/stories/';
+    const storiesFolderPath = './src/stories/';
 
     const filesInStoriesDirectory = FileSystem.readdirSync(storiesFolderPath);
 
@@ -67,7 +67,7 @@ function preProcessStories() {
         const storyIndexURL = path.join(folderURI, "index.json");
         const story = readStory(storyIndexURL);
         const augmentedStory = augmentStoryWithExifData(story, folderURI);
-        
+            
         writeJSON(storyIndexURL, augmentedStory);
     }
 }

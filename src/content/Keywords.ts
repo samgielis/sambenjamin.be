@@ -1,5 +1,5 @@
 const defaultKeywords = [
-  "photograpy",
+  "photography",
   "sam benjamin",
   "leuven",
   "family photography",

@@ -3,7 +3,7 @@ import { Story, getStoryCoverImageURL } from "../../model/Story";
 import { Container } from "react-bootstrap";
 import { StoryGrid } from "../home/children/StoryGrid";
 import { FaArrowLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import "./TagPage.css";
 import { trackPageView } from "../../util/Utils";
 import { Author } from "../../model/Author";
