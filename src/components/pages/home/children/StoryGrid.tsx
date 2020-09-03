@@ -81,11 +81,7 @@ function StoryThumbnail(props: StoryThumbnailProps) {
             />
             <div className="story-thumbnail-gradient"></div>
             <div className="story-thumbnail-description">
-              <h2>
-                <Link to={`/${getStoryID(props.story)}`}>
-                  {props.story.title}
-                </Link>
-              </h2>
+              <h2>{props.story.title}</h2>
               <h3>{props.story.subTitle || "See more"}</h3>
               <StoryDate date={props.story.date} />
             </div>
