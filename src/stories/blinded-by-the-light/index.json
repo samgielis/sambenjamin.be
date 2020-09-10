@@ -1,0 +1,26 @@
+{
+  "title": "Blinded by the light",
+  "date": "2020/09/05",
+  "photos": [
+    {
+      "fileName": "x.jpg"
+    },
+    {
+      "fileName": "cover.jpg"
+    },
+    {
+      "fileName": "42.jpg"
+    },
+    {
+      "fileName": "11.jpg"
+    },
+    {
+      "fileName": "13.jpg"
+    },
+    {
+      "fileName": "12.jpg"
+    }
+  ],
+  "layout": [1, 2, 3 ],
+  "tags": ["portrait"]
+}
