@@ -1,42 +1,116 @@
 {
-  "title": "Amélie",
-  "instaHandle": "bahar_rou",
-  "date": "2020/09/05",
-  "photos": [
-    {
-      "fileName": "12.jpg"
-    },
-    {
-      "fileName": "11.jpg"
-    },
-    {
-      "fileName": "13.jpg"
-    },
-    {
-      "fileName": "21.jpg"
-    },
-    {
-      "fileName": "22.jpg"
-    },
-    {
-      "fileName": "cover.jpg"
-    },
-    {
-      "fileName": "31.jpg"
-    },
-    {
-      "fileName": "32.jpg"
-    },
-    {
-      "fileName": "41.jpg"
-    },
-    {
-      "fileName": "42.jpg"
-    },
-    {
-      "fileName": "43.jpg"
-    }
-  ],
-  "layout": [3, 2, 1, 2, 3],
-  "tags": ["portrait"]
+	"title": "Amélie",
+	"instaHandle": "bahar_rou",
+	"date": "2020/09/05",
+	"photos": [
+		{
+			"fileName": "12.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 100,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "11.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 125,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "13.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 200,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "21.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 250,
+			"width": 2048,
+			"height": 1365
+		},
+		{
+			"fileName": "22.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 250,
+			"width": 2048,
+			"height": 1365
+		},
+		{
+			"fileName": "cover.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 200,
+			"width": 2048,
+			"height": 1365
+		},
+		{
+			"fileName": "31.jpg",
+			"focalLength": "50 mm",
+			"aperture": "4.00",
+			"shutterSpeed": "1/250",
+			"iso": 160,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "32.jpg",
+			"focalLength": "50 mm",
+			"aperture": "4.00",
+			"shutterSpeed": "1/250",
+			"iso": 160,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "41.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 100,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "42.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 100,
+			"width": 1365,
+			"height": 2048
+		},
+		{
+			"fileName": "43.jpg",
+			"focalLength": "50 mm",
+			"aperture": "3.50",
+			"shutterSpeed": "1/250",
+			"iso": 100,
+			"width": 1365,
+			"height": 2048
+		}
+	],
+	"layout": [
+		3,
+		2,
+		1,
+		2,
+		3
+	],
+	"tags": [
+		"portrait"
+	]
 }
