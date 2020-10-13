@@ -1,70 +1,59 @@
 {
-	"title": "Ine & Ben",
-	"subTitle": "Love in the south of France",
-	"date": "2019/07/19",
-	"photos": [
-		{
-			"fileName": "cover.jpg",
-			"focalLength": "50 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/250",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		},
-		{
-			"fileName": "12.jpg",
-			"focalLength": "50 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/200",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		},
-		{
-			"fileName": "2.jpg",
-			"focalLength": "50 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/125",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		},
-		{
-			"fileName": "31.jpg",
-			"focalLength": "50 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/200",
-			"iso": 100,
-			"width": 1067,
-			"height": 1600
-		},
-		{
-			"fileName": "32.jpg",
-			"focalLength": "50 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/250",
-			"iso": 100,
-			"width": 1067,
-			"height": 1600
-		},
-		{
-			"fileName": "cover.jpg",
-			"focalLength": "50 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/250",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		}
-	],
-	"layout": [
-		2,
-		1,
-		2
-	],
-	"tags": [
-		"portrait",
-		"couples"
-	]
+  "title": "Ine & Ben",
+  "subTitle": "Love in the south of France",
+  "date": "2019/07/19",
+  "photos": [
+    [
+      {
+        "fileName": "cover.jpg",
+        "focalLength": "50 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/250",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "fileName": "12.jpg",
+        "focalLength": "50 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/200",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    [
+      {
+        "fileName": "2.jpg",
+        "focalLength": "50 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/125",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    [
+      {
+        "fileName": "31.jpg",
+        "focalLength": "50 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/200",
+        "iso": 100,
+        "width": 1067,
+        "height": 1600
+      },
+      {
+        "fileName": "32.jpg",
+        "focalLength": "50 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/250",
+        "iso": 100,
+        "width": 1067,
+        "height": 1600
+      }
+    ]
+  ],
+  "tags": ["portrait", "couples"]
 }

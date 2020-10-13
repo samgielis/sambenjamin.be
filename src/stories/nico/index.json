@@ -1,71 +1,72 @@
 {
-	"title": "Nico",
-	"instaHandle": "nicoophetnet",
-	"date": "2019/07/06",
-	"photos": [
-		{
-			"fileName": "11.jpg",
-			"focalLength": "85 mm",
-			"aperture": "2.50",
-			"shutterSpeed": "1/320",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		},
-		{
-			"fileName": "3.jpg",
-			"focalLength": "85 mm",
-			"aperture": "2.20",
-			"shutterSpeed": "1/640",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		},
-		{
-			"fileName": "21.jpg",
-			"focalLength": "85 mm",
-			"aperture": "2.00",
-			"shutterSpeed": "1/800",
-			"iso": 100,
-			"width": 1067,
-			"height": 1600
-		},
-		{
-			"fileName": "22.jpg",
-			"focalLength": "24 mm",
-			"aperture": "2.00",
-			"shutterSpeed": "1/640",
-			"iso": 100,
-			"width": 1067,
-			"height": 1600
-		},
-		{
-			"fileName": "cover.jpg",
-			"focalLength": "24 mm",
-			"aperture": "2.50",
-			"shutterSpeed": "1/400",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		},
-		{
-			"fileName": "4.jpg",
-			"focalLength": "85 mm",
-			"aperture": "4.50",
-			"shutterSpeed": "1/400",
-			"iso": 100,
-			"width": 1600,
-			"height": 1067
-		}
-	],
-	"layout": [
-		1,
-		1,
-		2,
-		1,
-		1
-	],
-	"tags": [
-		"portrait"
-	]
+  "title": "Nico",
+  "instaHandle": "nicoophetnet",
+  "date": "2019/07/06",
+  "photos": [
+    [
+      {
+        "fileName": "11.jpg",
+        "focalLength": "85 mm",
+        "aperture": "2.50",
+        "shutterSpeed": "1/320",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    [
+      {
+        "fileName": "3.jpg",
+        "focalLength": "85 mm",
+        "aperture": "2.20",
+        "shutterSpeed": "1/640",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    [
+      {
+        "fileName": "21.jpg",
+        "focalLength": "85 mm",
+        "aperture": "2.00",
+        "shutterSpeed": "1/800",
+        "iso": 100,
+        "width": 1067,
+        "height": 1600
+      },
+      {
+        "fileName": "22.jpg",
+        "focalLength": "24 mm",
+        "aperture": "2.00",
+        "shutterSpeed": "1/640",
+        "iso": 100,
+        "width": 1067,
+        "height": 1600
+      }
+    ],
+    [
+      {
+        "fileName": "cover.jpg",
+        "focalLength": "24 mm",
+        "aperture": "2.50",
+        "shutterSpeed": "1/400",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    [
+      {
+        "fileName": "4.jpg",
+        "focalLength": "85 mm",
+        "aperture": "4.50",
+        "shutterSpeed": "1/400",
+        "iso": 100,
+        "width": 1600,
+        "height": 1067
+      }
+    ]
+  ],
+  "tags": ["portrait"]
 }
