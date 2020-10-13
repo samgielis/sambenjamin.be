@@ -1,19 +1,194 @@
 {
-  "title": "Jana",
-  "instaHandle": "dimsumgrams",
-  "date": "2020/10/10",
-  "photos": [
-    [{ "fileName": "1.jpg" }, { "fileName": "2.jpg" }],
-    [{ "fileName": "3.jpg" }],
-    [{ "fileName": "4.jpg" }, { "fileName": "5.jpg" }],
-    [{ "fileName": "cover.jpg" }],
-    [{ "fileName": "6.jpg" }, { "fileName": "7.jpg" }, { "fileName": "8.jpg" }],
-    [{ "fileName": "10.jpg" }, { "fileName": "9.jpg" }],
-    [{ "fileName": "11.jpg" }],
-    [{ "fileName": "12.jpg" }, { "fileName": "13.jpg" }],
-    [{ "fileName": "14.jpg" }],
-    [{ "fileName": "15.jpg" }, { "fileName": "16.jpg" }],
-    [{ "fileName": "17.jpg" }]
-  ],
-  "tags": ["portrait"]
+	"title": "Jana",
+	"instaHandle": "dimsumgrams",
+	"date": "2020/10/10",
+	"photos": [
+		[
+			{
+				"fileName": "1.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "85 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/80",
+				"iso": 800
+			},
+			{
+				"fileName": "2.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 800
+			}
+		],
+		[
+			{
+				"fileName": "3.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 800
+			}
+		],
+		[
+			{
+				"fileName": "4.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 800
+			},
+			{
+				"fileName": "5.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 800
+			}
+		],
+		[
+			{
+				"fileName": "cover.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/80",
+				"iso": 640
+			}
+		],
+		[
+			{
+				"fileName": "6.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/60",
+				"iso": 640
+			},
+			{
+				"fileName": "7.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/60",
+				"iso": 640
+			},
+			{
+				"fileName": "8.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/50",
+				"iso": 640
+			}
+		],
+		[
+			{
+				"fileName": "10.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 640
+			},
+			{
+				"fileName": "9.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 800
+			}
+		],
+		[
+			{
+				"fileName": "11.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/100",
+				"iso": 640
+			}
+		],
+		[
+			{
+				"fileName": "12.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/125",
+				"iso": 250
+			},
+			{
+				"fileName": "13.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/160",
+				"iso": 250
+			}
+		],
+		[
+			{
+				"fileName": "14.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/125",
+				"iso": 250
+			}
+		],
+		[
+			{
+				"fileName": "15.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/125",
+				"iso": 250
+			},
+			{
+				"fileName": "16.jpg",
+				"width": 1365,
+				"height": 2048,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/125",
+				"iso": 250
+			}
+		],
+		[
+			{
+				"fileName": "17.jpg",
+				"width": 2048,
+				"height": 1365,
+				"focalLength": "50 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/160",
+				"iso": 250
+			}
+		]
+	],
+	"tags": [
+		"portrait"
+	]
 }
