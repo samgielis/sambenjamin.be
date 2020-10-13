@@ -76,7 +76,6 @@ export const query = graphql`
           date
           description
           instaHandle
-          layout
           subTitle
           tags
           photos {
