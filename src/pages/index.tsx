@@ -47,7 +47,6 @@ export const query = graphql`
           date
           description
           instaHandle
-          layout
           photos {
             aperture
             focalLength
