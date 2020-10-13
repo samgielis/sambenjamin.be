@@ -1,78 +1,77 @@
 {
-	"title": "Marie",
-	"instaHandle": "mariegarre",
-	"date": "2020/03/13",
-	"photos": [
-		{
-			"fileName": "11.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/125",
-			"iso": 800,
-			"width": 1080,
-			"height": 1620
-		},
-		{
-			"fileName": "12.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/320",
-			"iso": 400,
-			"width": 1080,
-			"height": 1620
-		},
-		{
-			"fileName": "1.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/100",
-			"iso": 400,
-			"width": 1080,
-			"height": 1620
-		},
-		{
-			"fileName": "2.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/80",
-			"iso": 400,
-			"width": 1080,
-			"height": 1620
-		},
-		{
-			"fileName": "3.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/160",
-			"iso": 400,
-			"width": 1080,
-			"height": 1620
-		},
-		{
-			"fileName": "21.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/400",
-			"iso": 400,
-			"width": 1620,
-			"height": 1080
-		},
-		{
-			"fileName": "22.jpg",
-			"focalLength": "85 mm",
-			"aperture": "3.20",
-			"shutterSpeed": "1/160",
-			"iso": 200,
-			"width": 1620,
-			"height": 1080
-		}
-	],
-	"layout": [
-		2,
-		3,
-		2
-	],
-	"tags": [
-		"portrait"
-	]
+  "title": "Marie",
+  "instaHandle": "mariegarre",
+  "date": "2020/03/13",
+  "photos": [
+    [
+      {
+        "fileName": "11.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/125",
+        "iso": 800,
+        "width": 1080,
+        "height": 1620
+      },
+      {
+        "fileName": "12.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/320",
+        "iso": 400,
+        "width": 1080,
+        "height": 1620
+      }
+    ],
+    [
+      {
+        "fileName": "1.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/100",
+        "iso": 400,
+        "width": 1080,
+        "height": 1620
+      },
+      {
+        "fileName": "2.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/80",
+        "iso": 400,
+        "width": 1080,
+        "height": 1620
+      },
+      {
+        "fileName": "3.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/160",
+        "iso": 400,
+        "width": 1080,
+        "height": 1620
+      }
+    ],
+    [
+      {
+        "fileName": "21.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/400",
+        "iso": 400,
+        "width": 1620,
+        "height": 1080
+      },
+      {
+        "fileName": "22.jpg",
+        "focalLength": "85 mm",
+        "aperture": "3.20",
+        "shutterSpeed": "1/160",
+        "iso": 200,
+        "width": 1620,
+        "height": 1080
+      }
+    ]
+  ],
+  "tags": ["portrait"]
 }

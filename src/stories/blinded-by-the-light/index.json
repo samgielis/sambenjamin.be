@@ -1,68 +1,67 @@
 {
-	"title": "Blinded by the light",
-	"date": "2020/09/05",
-	"photos": [
-		{
-			"fileName": "x.jpg",
-			"focalLength": "50 mm",
-			"aperture": "2.80",
-			"shutterSpeed": "1/80",
-			"iso": 1600,
-			"width": 2048,
-			"height": 1365
-		},
-		{
-			"fileName": "cover.jpg",
-			"focalLength": "50 mm",
-			"aperture": "2.80",
-			"shutterSpeed": "1/80",
-			"iso": 1600,
-			"width": 2048,
-			"height": 1365
-		},
-		{
-			"fileName": "42.jpg",
-			"focalLength": "50 mm",
-			"aperture": "2.80",
-			"shutterSpeed": "1/80",
-			"iso": 1250,
-			"width": 2048,
-			"height": 1365
-		},
-		{
-			"fileName": "11.jpg",
-			"focalLength": "50 mm",
-			"aperture": "2.80",
-			"shutterSpeed": "1/80",
-			"iso": 1600,
-			"width": 1365,
-			"height": 2048
-		},
-		{
-			"fileName": "13.jpg",
-			"focalLength": "50 mm",
-			"aperture": "2.80",
-			"shutterSpeed": "1/80",
-			"iso": 1600,
-			"width": 1365,
-			"height": 2048
-		},
-		{
-			"fileName": "12.jpg",
-			"focalLength": "50 mm",
-			"aperture": "2.80",
-			"shutterSpeed": "1/80",
-			"iso": 1600,
-			"width": 1365,
-			"height": 2048
-		}
-	],
-	"layout": [
-		1,
-		2,
-		3
-	],
-	"tags": [
-		"portrait"
-	]
+  "title": "Blinded by the light",
+  "date": "2020/09/05",
+  "photos": [
+    [
+      {
+        "fileName": "x.jpg",
+        "focalLength": "50 mm",
+        "aperture": "2.80",
+        "shutterSpeed": "1/80",
+        "iso": 1600,
+        "width": 2048,
+        "height": 1365
+      }
+    ],
+    [
+      {
+        "fileName": "cover.jpg",
+        "focalLength": "50 mm",
+        "aperture": "2.80",
+        "shutterSpeed": "1/80",
+        "iso": 1600,
+        "width": 2048,
+        "height": 1365
+      },
+      {
+        "fileName": "42.jpg",
+        "focalLength": "50 mm",
+        "aperture": "2.80",
+        "shutterSpeed": "1/80",
+        "iso": 1250,
+        "width": 2048,
+        "height": 1365
+      }
+    ],
+    [
+      {
+        "fileName": "11.jpg",
+        "focalLength": "50 mm",
+        "aperture": "2.80",
+        "shutterSpeed": "1/80",
+        "iso": 1600,
+        "width": 1365,
+        "height": 2048
+      },
+      {
+        "fileName": "13.jpg",
+        "focalLength": "50 mm",
+        "aperture": "2.80",
+        "shutterSpeed": "1/80",
+        "iso": 1600,
+        "width": 1365,
+        "height": 2048
+      },
+      {
+        "fileName": "12.jpg",
+        "focalLength": "50 mm",
+        "aperture": "2.80",
+        "shutterSpeed": "1/80",
+        "iso": 1600,
+        "width": 1365,
+        "height": 2048
+      }
+    ]
+  ],
+  "tags": ["portrait"]
 }
