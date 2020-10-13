@@ -56,6 +56,7 @@ export const query = graphql`
       filter: {
         sourceInstanceName: { eq: "stories" }
         relativeDirectory: { eq: $slug }
+        extension: { eq: "jpg" }
       }
     ) {
       nodes {
