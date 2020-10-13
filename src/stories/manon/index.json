@@ -1,147 +1,149 @@
 {
-  "title": "Manon",
-  "instaHandle": "manonwarnant",
-  "description": "Shoutout to great colleagues.",
-  "date": "2020/02/19",
-  "photos": [
-    [
-      {
-        "fileName": "11.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/60",
-        "iso": 200,
-        "width": 1620,
-        "height": 1080
-      },
-      {
-        "fileName": "12.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/80",
-        "iso": 100,
-        "width": 1620,
-        "height": 1080
-      }
-    ],
-    [
-      {
-        "fileName": "21.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/60",
-        "iso": 100,
-        "width": 1080,
-        "height": 1620
-      },
-      {
-        "fileName": "22.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/60",
-        "iso": 100,
-        "width": 1080,
-        "height": 1620
-      },
-      {
-        "fileName": "23.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/50",
-        "iso": 100,
-        "width": 1080,
-        "height": 1620
-      }
-    ],
-    [
-      {
-        "fileName": "31.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/100",
-        "iso": 200,
-        "width": 5953,
-        "height": 3968
-      }
-    ],
-    [
-      {
-        "fileName": "41.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/80",
-        "iso": 640,
-        "width": 1620,
-        "height": 1080
-      },
-      {
-        "fileName": "cover.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/80",
-        "iso": 100,
-        "width": 1620,
-        "height": 1080
-      },
-      {
-        "fileName": "43.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/100",
-        "iso": 100,
-        "width": 1620,
-        "height": 1080
-      }
-    ],
-    [
-      {
-        "fileName": "52.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/100",
-        "iso": 200,
-        "width": 1080,
-        "height": 1620
-      },
-      {
-        "fileName": "51.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/100",
-        "iso": 200,
-        "width": 1080,
-        "height": 1620
-      },
-      {
-        "fileName": "53.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/80",
-        "iso": 200,
-        "width": 1080,
-        "height": 1620
-      }
-    ],
-    [
-      {
-        "fileName": "54.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/80",
-        "iso": 640,
-        "width": 1080,
-        "height": 1620
-      },
-      {
-        "fileName": "61.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/125",
-        "iso": 1600,
-        "width": 1080,
-        "height": 1620
-      }
-    ]
-  ],
-  "tags": ["portrait"]
+	"title": "Manon",
+	"instaHandle": "manonwarnant",
+	"description": "Shoutout to great colleagues.",
+	"date": "2020/02/19",
+	"photos": [
+		[
+			{
+				"fileName": "11.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/60",
+				"iso": 200,
+				"width": 1620,
+				"height": 1080
+			},
+			{
+				"fileName": "12.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/80",
+				"iso": 100,
+				"width": 1620,
+				"height": 1080
+			}
+		],
+		[
+			{
+				"fileName": "21.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/60",
+				"iso": 100,
+				"width": 1080,
+				"height": 1620
+			},
+			{
+				"fileName": "22.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/60",
+				"iso": 100,
+				"width": 1080,
+				"height": 1620
+			},
+			{
+				"fileName": "23.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/50",
+				"iso": 100,
+				"width": 1080,
+				"height": 1620
+			}
+		],
+		[
+			{
+				"fileName": "31.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/100",
+				"iso": 200,
+				"width": 5953,
+				"height": 3968
+			}
+		],
+		[
+			{
+				"fileName": "41.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/80",
+				"iso": 640,
+				"width": 1620,
+				"height": 1080
+			},
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/80",
+				"iso": 100,
+				"width": 1620,
+				"height": 1080
+			},
+			{
+				"fileName": "43.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/100",
+				"iso": 100,
+				"width": 1620,
+				"height": 1080
+			}
+		],
+		[
+			{
+				"fileName": "52.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/100",
+				"iso": 200,
+				"width": 1080,
+				"height": 1620
+			},
+			{
+				"fileName": "51.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/100",
+				"iso": 200,
+				"width": 1080,
+				"height": 1620
+			},
+			{
+				"fileName": "53.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/80",
+				"iso": 200,
+				"width": 1080,
+				"height": 1620
+			}
+		],
+		[
+			{
+				"fileName": "54.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/80",
+				"iso": 640,
+				"width": 1080,
+				"height": 1620
+			},
+			{
+				"fileName": "61.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/125",
+				"iso": 1600,
+				"width": 1080,
+				"height": 1620
+			}
+		]
+	],
+	"tags": [
+		"portrait"
+	]
 }
