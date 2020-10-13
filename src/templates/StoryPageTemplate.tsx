@@ -33,7 +33,7 @@ interface StoryPageTemplateProps {
 const StoryPageTemplate = ({ data }: StoryPageTemplateProps) => {
   const story = data.allFile.nodes[0].childStoryIndex;
   story.coverURL = data.coverImage.childImageSharp.original.src;
-  story.photos.forEach((photo) => {
+  story.photos.flat().forEach((photo) => {
     data.images.nodes.forEach((node) => {
       if (node.base === photo.fileName.base) {
         photo.fileName.base = node.childImageSharp.original.src;

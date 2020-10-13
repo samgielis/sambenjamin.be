@@ -10,8 +10,7 @@ export type Story = {
   description?: string;
   instaHandle?: string;
   date: string;
-  photos: Photo[];
-  layout: number[];
+  photos: Photo[][];
   tags?: string[];
   coverURL?: string;
 };

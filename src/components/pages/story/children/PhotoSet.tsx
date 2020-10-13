@@ -10,11 +10,10 @@ type PhotoSetProps = {
 
 export function PhotoSet(props: PhotoSetProps) {
   const photos = props.story.photos;
-  const layout = props.story.layout;
   const rows = [];
 
-  for (let iL = 0, iP = 0; iL < layout.length; iL++) {
-    const amountOfPhotosInRow = layout[iL];
+  for (let iL = 0, iP = 0; iL < photos.length; iL++) {
+    const amountOfPhotosInRow = photos[iL].length;
     const columns = [];
     for (
       let photoInRow = 0;
@@ -23,7 +22,7 @@ export function PhotoSet(props: PhotoSetProps) {
     ) {
       columns.push(
         <Col key={iP} md={12 / amountOfPhotosInRow}>
-          <PhotoWrapper photo={photos[iP]} storyID={getStoryID(props.story)} />
+          <PhotoWrapper photo={photos[iP][iL]} storyID={getStoryID(props.story)} />
         </Col>
       );
     }
