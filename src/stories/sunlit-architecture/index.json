@@ -1,41 +1,43 @@
 {
-  "title": "Sunlit Architecture",
-  "subTitle": "a story of light and rhythm",
-  "date": "2020/03/18",
-  "photos": [
-    [
-      {
-        "fileName": "cover.jpg",
-        "focalLength": "24 mm",
-        "aperture": "9.00",
-        "shutterSpeed": "1/40",
-        "iso": 800,
-        "width": 1600,
-        "height": 1067
-      }
-    ],
-    [
-      {
-        "fileName": "1.jpg",
-        "focalLength": "24 mm",
-        "aperture": "10.00",
-        "shutterSpeed": "1/80",
-        "iso": 1600,
-        "width": 1600,
-        "height": 1067
-      }
-    ],
-    [
-      {
-        "fileName": "2.jpg",
-        "focalLength": "24 mm",
-        "aperture": "10.00",
-        "shutterSpeed": "1/40",
-        "iso": 1600,
-        "width": 1600,
-        "height": 1067
-      }
-    ]
-  ],
-  "tags": ["architecture"]
+	"title": "Sunlit Architecture",
+	"subTitle": "a story of light and rhythm",
+	"date": "2020/03/18",
+	"photos": [
+		[
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "24 mm",
+				"aperture": "9.00",
+				"shutterSpeed": "1/40",
+				"iso": 800,
+				"width": 1600,
+				"height": 1067
+			}
+		],
+		[
+			{
+				"fileName": "1.jpg",
+				"focalLength": "24 mm",
+				"aperture": "10.00",
+				"shutterSpeed": "1/80",
+				"iso": 1600,
+				"width": 1600,
+				"height": 1067
+			}
+		],
+		[
+			{
+				"fileName": "2.jpg",
+				"focalLength": "24 mm",
+				"aperture": "10.00",
+				"shutterSpeed": "1/40",
+				"iso": 1600,
+				"width": 1600,
+				"height": 1067
+			}
+		]
+	],
+	"tags": [
+		"architecture"
+	]
 }

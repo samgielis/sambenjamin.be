@@ -1,79 +1,81 @@
 {
-  "title": "Shanna in Madeira",
-  "instaHandle": "shannaverspreet",
-  "date": "2019/11/07",
-  "photos": [
-    [
-      {
-        "fileName": "1.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.50",
-        "shutterSpeed": "1/160",
-        "iso": 160,
-        "width": 1600,
-        "height": 1067
-      }
-    ],
-    [
-      {
-        "fileName": "21.jpg",
-        "focalLength": "85 mm",
-        "aperture": "1.80",
-        "shutterSpeed": "1/100",
-        "iso": 160,
-        "width": 1067,
-        "height": 1600
-      },
-      {
-        "fileName": "22.jpg",
-        "focalLength": "85 mm",
-        "aperture": "1.80",
-        "shutterSpeed": "1/100",
-        "iso": 160,
-        "width": 1067,
-        "height": 1600
-      }
-    ],
-    [
-      {
-        "fileName": "31.jpg",
-        "focalLength": "85 mm",
-        "aperture": "1.80",
-        "shutterSpeed": "1/200",
-        "iso": 160,
-        "width": 1600,
-        "height": 1067
-      },
-      {
-        "fileName": "32.jpg",
-        "focalLength": "85 mm",
-        "aperture": "1.80",
-        "shutterSpeed": "1/200",
-        "iso": 160,
-        "width": 1600,
-        "height": 1067
-      },
-      {
-        "fileName": "33.jpg",
-        "focalLength": "85 mm",
-        "aperture": "1.80",
-        "shutterSpeed": "1/250",
-        "iso": 160,
-        "width": 1600,
-        "height": 1067
-      }
-    ],
-    [
-      {
-        "fileName": "cover.jpg",
-        "focalLength": "85 mm",
-        "aperture": "2.20",
-        "shutterSpeed": "1/500",
-        "iso": 160,
-        "width": 1600,
-        "height": 1067
-      }
-    ]
-  ],
-  "tags": ["portrait"]
+	"title": "Shanna in Madeira",
+	"instaHandle": "shannaverspreet",
+	"date": "2019/11/07",
+	"photos": [
+		[
+			{
+				"fileName": "1.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/160",
+				"iso": 160,
+				"width": 1600,
+				"height": 1067
+			}
+		],
+		[
+			{
+				"fileName": "21.jpg",
+				"focalLength": "85 mm",
+				"aperture": "1.80",
+				"shutterSpeed": "1/100",
+				"iso": 160,
+				"width": 1067,
+				"height": 1600
+			},
+			{
+				"fileName": "22.jpg",
+				"focalLength": "85 mm",
+				"aperture": "1.80",
+				"shutterSpeed": "1/100",
+				"iso": 160,
+				"width": 1067,
+				"height": 1600
+			}
+		],
+		[
+			{
+				"fileName": "31.jpg",
+				"focalLength": "85 mm",
+				"aperture": "1.80",
+				"shutterSpeed": "1/200",
+				"iso": 160,
+				"width": 1600,
+				"height": 1067
+			},
+			{
+				"fileName": "32.jpg",
+				"focalLength": "85 mm",
+				"aperture": "1.80",
+				"shutterSpeed": "1/200",
+				"iso": 160,
+				"width": 1600,
+				"height": 1067
+			},
+			{
+				"fileName": "33.jpg",
+				"focalLength": "85 mm",
+				"aperture": "1.80",
+				"shutterSpeed": "1/250",
+				"iso": 160,
+				"width": 1600,
+				"height": 1067
+			}
+		],
+		[
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.20",
+				"shutterSpeed": "1/500",
+				"iso": 160,
+				"width": 1600,
+				"height": 1067
+			}
+		]
+	],
+	"tags": [
+		"portrait"
+	]
 }

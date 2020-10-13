@@ -1,110 +1,114 @@
 {
-  "title": "In Ruins",
-  "subTitle": "The old Abbey of Villers-la-Ville",
-  "date": "2020/08/19",
-  "photos": [
-    [
-      {
-        "fileName": "1.jpg",
-        "focalLength": "24 mm",
-        "aperture": "8.00",
-        "shutterSpeed": "1/320",
-        "iso": 200,
-        "width": 2048,
-        "height": 1365
-      }
-    ],
-    [
-      {
-        "fileName": "notcover.jpg",
-        "focalLength": "24 mm",
-        "aperture": "5.00",
-        "shutterSpeed": "1/30",
-        "iso": 640,
-        "width": 2048,
-        "height": 1365
-      },
-      {
-        "fileName": "cover.jpg",
-        "focalLength": "24 mm",
-        "aperture": "5.00",
-        "shutterSpeed": "1/25",
-        "iso": 640,
-        "width": 2048,
-        "height": 1365
-      }
-    ],
-    [
-      {
-        "fileName": "21.jpg",
-        "focalLength": "24 mm",
-        "aperture": "8.00",
-        "shutterSpeed": "1/1000",
-        "iso": 200,
-        "width": 2048,
-        "height": 1365
-      }
-    ],
-    [
-      {
-        "fileName": "31.jpg",
-        "focalLength": "24 mm",
-        "aperture": "8.00",
-        "shutterSpeed": "1/400",
-        "iso": 200,
-        "width": 1365,
-        "height": 2048
-      },
-      {
-        "fileName": "33.jpg",
-        "focalLength": "50 mm",
-        "aperture": "5.00",
-        "shutterSpeed": "1/125",
-        "iso": 250,
-        "width": 1365,
-        "height": 2048
-      },
-      {
-        "fileName": "32.jpg",
-        "focalLength": "50 mm",
-        "aperture": "5.00",
-        "shutterSpeed": "1/500",
-        "iso": 250,
-        "width": 1365,
-        "height": 2048
-      }
-    ],
-    [
-      {
-        "fileName": "41.jpg",
-        "focalLength": "24 mm",
-        "aperture": "8.00",
-        "shutterSpeed": "1/320",
-        "iso": 200,
-        "width": 2048,
-        "height": 1365
-      },
-      {
-        "fileName": "42.jpg",
-        "focalLength": "24 mm",
-        "aperture": "8.00",
-        "shutterSpeed": "1/30",
-        "iso": 200,
-        "width": 2048,
-        "height": 1365
-      }
-    ],
-    [
-      {
-        "fileName": "51.jpg",
-        "focalLength": "24 mm",
-        "aperture": "8.00",
-        "shutterSpeed": "1/320",
-        "iso": 200,
-        "width": 2048,
-        "height": 1365
-      }
-    ]
-  ],
-  "tags": ["monochrome", "architecture", "historical"]
+	"title": "In Ruins",
+	"subTitle": "The old Abbey of Villers-la-Ville",
+	"date": "2020/08/19",
+	"photos": [
+		[
+			{
+				"fileName": "1.jpg",
+				"focalLength": "24 mm",
+				"aperture": "8.00",
+				"shutterSpeed": "1/320",
+				"iso": 200,
+				"width": 2048,
+				"height": 1365
+			}
+		],
+		[
+			{
+				"fileName": "notcover.jpg",
+				"focalLength": "24 mm",
+				"aperture": "5.00",
+				"shutterSpeed": "1/30",
+				"iso": 640,
+				"width": 2048,
+				"height": 1365
+			},
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "24 mm",
+				"aperture": "5.00",
+				"shutterSpeed": "1/25",
+				"iso": 640,
+				"width": 2048,
+				"height": 1365
+			}
+		],
+		[
+			{
+				"fileName": "21.jpg",
+				"focalLength": "24 mm",
+				"aperture": "8.00",
+				"shutterSpeed": "1/1000",
+				"iso": 200,
+				"width": 2048,
+				"height": 1365
+			}
+		],
+		[
+			{
+				"fileName": "31.jpg",
+				"focalLength": "24 mm",
+				"aperture": "8.00",
+				"shutterSpeed": "1/400",
+				"iso": 200,
+				"width": 1365,
+				"height": 2048
+			},
+			{
+				"fileName": "33.jpg",
+				"focalLength": "50 mm",
+				"aperture": "5.00",
+				"shutterSpeed": "1/125",
+				"iso": 250,
+				"width": 1365,
+				"height": 2048
+			},
+			{
+				"fileName": "32.jpg",
+				"focalLength": "50 mm",
+				"aperture": "5.00",
+				"shutterSpeed": "1/500",
+				"iso": 250,
+				"width": 1365,
+				"height": 2048
+			}
+		],
+		[
+			{
+				"fileName": "41.jpg",
+				"focalLength": "24 mm",
+				"aperture": "8.00",
+				"shutterSpeed": "1/320",
+				"iso": 200,
+				"width": 2048,
+				"height": 1365
+			},
+			{
+				"fileName": "42.jpg",
+				"focalLength": "24 mm",
+				"aperture": "8.00",
+				"shutterSpeed": "1/30",
+				"iso": 200,
+				"width": 2048,
+				"height": 1365
+			}
+		],
+		[
+			{
+				"fileName": "51.jpg",
+				"focalLength": "24 mm",
+				"aperture": "8.00",
+				"shutterSpeed": "1/320",
+				"iso": 200,
+				"width": 2048,
+				"height": 1365
+			}
+		]
+	],
+	"tags": [
+		"monochrome",
+		"architecture",
+		"historical"
+	]
 }

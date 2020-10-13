@@ -1,59 +1,61 @@
 {
-  "title": "In Perpetuum",
-  "subTitle": "Caught in the eternal void",
-  "date": "2020/03/04",
-  "photos": [
-    [
-      {
-        "fileName": "1.jpg",
-        "focalLength": "85 mm",
-        "aperture": "3.50",
-        "shutterSpeed": "1/200",
-        "iso": 1600,
-        "width": 1620,
-        "height": 1080
-      },
-      {
-        "fileName": "2.jpg",
-        "focalLength": "85 mm",
-        "aperture": "5.00",
-        "shutterSpeed": "1/8",
-        "iso": 400,
-        "width": 1620,
-        "height": 1080
-      }
-    ],
-    [
-      {
-        "fileName": "3.jpg",
-        "focalLength": "85 mm",
-        "aperture": "7.10",
-        "shutterSpeed": "1/40",
-        "iso": 1600,
-        "width": 1620,
-        "height": 1080
-      }
-    ],
-    [
-      {
-        "fileName": "cover.jpg",
-        "focalLength": "85 mm",
-        "aperture": "3.50",
-        "shutterSpeed": "1/160",
-        "iso": 1600,
-        "width": 1620,
-        "height": 1080
-      },
-      {
-        "fileName": "5.jpg",
-        "focalLength": "85 mm",
-        "aperture": "7.10",
-        "shutterSpeed": "1/80",
-        "iso": 1600,
-        "width": 1620,
-        "height": 1080
-      }
-    ]
-  ],
-  "tags": ["nachtwezen"]
+	"title": "In Perpetuum",
+	"subTitle": "Caught in the eternal void",
+	"date": "2020/03/04",
+	"photos": [
+		[
+			{
+				"fileName": "1.jpg",
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/200",
+				"iso": 1600,
+				"width": 1620,
+				"height": 1080
+			},
+			{
+				"fileName": "2.jpg",
+				"focalLength": "85 mm",
+				"aperture": "5.00",
+				"shutterSpeed": "1/8",
+				"iso": 400,
+				"width": 1620,
+				"height": 1080
+			}
+		],
+		[
+			{
+				"fileName": "3.jpg",
+				"focalLength": "85 mm",
+				"aperture": "7.10",
+				"shutterSpeed": "1/40",
+				"iso": 1600,
+				"width": 1620,
+				"height": 1080
+			}
+		],
+		[
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "85 mm",
+				"aperture": "3.50",
+				"shutterSpeed": "1/160",
+				"iso": 1600,
+				"width": 1620,
+				"height": 1080
+			},
+			{
+				"fileName": "5.jpg",
+				"focalLength": "85 mm",
+				"aperture": "7.10",
+				"shutterSpeed": "1/80",
+				"iso": 1600,
+				"width": 1620,
+				"height": 1080
+			}
+		]
+	],
+	"tags": [
+		"nachtwezen"
+	]
 }
