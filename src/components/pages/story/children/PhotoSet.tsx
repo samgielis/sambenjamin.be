@@ -10,28 +10,25 @@ type PhotoSetProps = {
 
 export function PhotoSet(props: PhotoSetProps) {
   const photos = props.story.photos;
-  const rows = [];
 
-  for (let iL = 0, iP = 0; iL < photos.length; iL++) {
-    const amountOfPhotosInRow = photos[iL].length;
-    const columns = [];
-    for (
-      let photoInRow = 0;
-      photoInRow < amountOfPhotosInRow;
-      photoInRow++, iP++
-    ) {
-      columns.push(
-        <Col key={iP} md={12 / amountOfPhotosInRow}>
-          <PhotoWrapper photo={photos[iP][iL]} storyID={getStoryID(props.story)} />
-        </Col>
-      );
-    }
-    const row = <Row key={iL}>{columns}</Row>;
-    rows.push(row);
-  }
   return (
     <Container fluid={true} className="photoset">
-      {rows}
+      {photos.map((row, i) => {
+        return (
+          <Row key={i}>
+            {row.map((photo, j) => {
+              return (
+                <Col key={j} md={12 / row.length}>
+                  <PhotoWrapper
+                    photo={photo}
+                    storyID={getStoryID(props.story)}
+                  />
+                </Col>
+              );
+            })}
+          </Row>
+        );
+      })}
     </Container>
   );
 }
