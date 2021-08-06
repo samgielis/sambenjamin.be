@@ -24,10 +24,12 @@ export function getStoryCoverImageURL(story: Story): string {
     return story.coverURL;
   }
   let coverImageUrl = "";
-  story.photos.forEach((photo) => {
-    if (photo.fileName.base.indexOf("cover") > -1) {
-      coverImageUrl = photo.fileName.base;
-    }
+  story.photos.forEach((row: Photo[]) => {
+    row.forEach(photo => {
+      if (photo.fileName.base.indexOf("cover") > -1) {
+        coverImageUrl = photo.fileName.base;
+      }
+    });
   });
   return coverImageUrl;
 }
