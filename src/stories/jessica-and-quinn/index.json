@@ -1,0 +1,84 @@
+{
+	"title": "Jessica & Quinn",
+	"date": "2021/05/01",
+	"photos": [
+		[
+			{
+				"fileName": "1.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/400",
+				"iso": 320,
+				"width": 5878,
+				"height": 3919
+			}
+		],
+		[
+			{
+				"fileName": "21.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/640",
+				"iso": 320,
+				"width": 5506,
+				"height": 3671
+			},
+			{
+				"fileName": "22.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/800",
+				"iso": 320,
+				"width": 5872,
+				"height": 3914
+			}
+		],
+		[
+			{
+				"fileName": "3.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 4000,
+				"height": 6000
+			}
+		],
+		[
+			{
+				"fileName": "41.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/1600",
+				"iso": 320,
+				"width": 5316,
+				"height": 3544
+			},
+			{
+				"fileName": "42.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/1000",
+				"iso": 320,
+				"width": 5598,
+				"height": 3732
+			}
+		],
+		[
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "85 mm",
+				"aperture": "2.50",
+				"shutterSpeed": "1/500",
+				"iso": 320,
+				"width": 5816,
+				"height": 3878
+			}
+		]
+	],
+	"tags": [
+		"portrait",
+		"kids",
+		"family"
+	]
+}
