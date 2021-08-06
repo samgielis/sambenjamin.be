@@ -9,8 +9,8 @@
 				"aperture": "4.00",
 				"shutterSpeed": "1/400",
 				"iso": 320,
-				"width": 5878,
-				"height": 3919
+				"width": 2048,
+				"height": 1365
 			}
 		],
 		[
@@ -20,8 +20,8 @@
 				"aperture": "4.00",
 				"shutterSpeed": "1/640",
 				"iso": 320,
-				"width": 5506,
-				"height": 3671
+				"width": 2048,
+				"height": 1365
 			},
 			{
 				"fileName": "22.jpg",
@@ -29,8 +29,8 @@
 				"aperture": "4.00",
 				"shutterSpeed": "1/800",
 				"iso": 320,
-				"width": 5872,
-				"height": 3914
+				"width": 2048,
+				"height": 1365
 			}
 		],
 		[
@@ -40,8 +40,8 @@
 				"aperture": "4.00",
 				"shutterSpeed": "1/250",
 				"iso": 320,
-				"width": 4000,
-				"height": 6000
+				"width": 1365,
+				"height": 2048
 			}
 		],
 		[
@@ -51,8 +51,8 @@
 				"aperture": "2.50",
 				"shutterSpeed": "1/1600",
 				"iso": 320,
-				"width": 5316,
-				"height": 3544
+				"width": 2048,
+				"height": 1365
 			},
 			{
 				"fileName": "42.jpg",
@@ -60,8 +60,8 @@
 				"aperture": "2.50",
 				"shutterSpeed": "1/1000",
 				"iso": 320,
-				"width": 5598,
-				"height": 3732
+				"width": 2048,
+				"height": 1365
 			}
 		],
 		[
@@ -71,8 +71,8 @@
 				"aperture": "2.50",
 				"shutterSpeed": "1/500",
 				"iso": 320,
-				"width": 5816,
-				"height": 3878
+				"width": 2048,
+				"height": 1365
 			}
 		]
 	],
