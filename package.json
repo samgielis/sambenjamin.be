@@ -46,6 +46,7 @@
         "gatsby:dev": "gatsby develop",
         "gatsby:build": "gatsby build",
         "gatsby:serve": "gatsby serve",
+        "gatsby:clean": "gatsby clean",
         "preprocess-images": "ts-node PreProcessImages.ts"
     },
     "eslintConfig": {
