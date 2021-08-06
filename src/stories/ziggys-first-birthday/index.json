@@ -1,0 +1,230 @@
+{
+	"title": "Ziggys first birthday",
+	"date": "2021/05/01",
+	"photos": [
+		[
+			{
+				"fileName": "12.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/400",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "11.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/400",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "2.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/640",
+				"iso": 320,
+				"width": 3686,
+				"height": 5529
+			}
+		],
+		[
+			{
+				"fileName": "31.jpg",
+				"focalLength": "85 mm",
+				"aperture": "5.60",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "32.jpg",
+				"focalLength": "85 mm",
+				"aperture": "5.60",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "33.jpg",
+				"focalLength": "85 mm",
+				"aperture": "5.60",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 5979,
+				"height": 3986
+			},
+			{
+				"fileName": "34.jpg",
+				"focalLength": "85 mm",
+				"aperture": "5.60",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "4.jpg",
+				"focalLength": "85 mm",
+				"aperture": "5.60",
+				"shutterSpeed": "1/125",
+				"iso": 320,
+				"width": 4856,
+				"height": 3237
+			}
+		],
+		[
+			{
+				"fileName": "51.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 5866,
+				"height": 3911
+			},
+			{
+				"fileName": "52.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/200",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "53.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/200",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "54.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/250",
+				"iso": 320,
+				"width": 5849,
+				"height": 3899
+			}
+		],
+		[
+			{
+				"fileName": "62.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/200",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "61.jpg",
+				"focalLength": "85 mm",
+				"aperture": "4.00",
+				"shutterSpeed": "1/200",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "71.jpg",
+				"focalLength": "50 mm",
+				"aperture": "3.20",
+				"shutterSpeed": "1/1600",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "72.jpg",
+				"focalLength": "50 mm",
+				"aperture": "3.20",
+				"shutterSpeed": "1/1250",
+				"iso": 320,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "8.jpg",
+				"focalLength": "50 mm",
+				"aperture": "3.20",
+				"shutterSpeed": "1/4000",
+				"iso": 320,
+				"width": 5780,
+				"height": 3853
+			}
+		],
+		[
+			{
+				"fileName": "91.jpg",
+				"focalLength": "50 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/640",
+				"iso": 160,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "92.jpg",
+				"focalLength": "50 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/640",
+				"iso": 160,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "94.jpg",
+				"focalLength": "50 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/640",
+				"iso": 160,
+				"width": 6000,
+				"height": 4000
+			},
+			{
+				"fileName": "95.jpg",
+				"focalLength": "50 mm",
+				"aperture": "4.50",
+				"shutterSpeed": "1/640",
+				"iso": 160,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "010.jpg",
+				"focalLength": "50 mm",
+				"aperture": "5.60",
+				"shutterSpeed": "1/250",
+				"iso": 160,
+				"width": 4000,
+				"height": 6000
+			}
+		]
+	],
+	"tags": [
+		"portrait",
+		"couples",
+		"baby",
+		"kids"
+	]
+}
