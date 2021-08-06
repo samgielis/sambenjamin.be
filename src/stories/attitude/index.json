@@ -1,0 +1,132 @@
+{
+	"title": "Attitude",
+	"instaHandle": "tessa.vrsprt",
+	"date": "2021/07/31",
+	"photos": [
+		[
+			{
+				"fileName": "11.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/2500",
+				"iso": 320,
+				"width": 5696,
+				"height": 3797
+			},
+			{
+				"fileName": "cover.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/2500",
+				"iso": 320,
+				"width": 5482,
+				"height": 3654
+			}
+		],
+		[
+			{
+				"fileName": "2.jpg",
+				"focalLength": "50 mm",
+				"aperture": "18.00",
+				"shutterSpeed": "1/20",
+				"iso": 50,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "31.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/400",
+				"iso": 100,
+				"width": 4000,
+				"height": 6000
+			},
+			{
+				"fileName": "32.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/200",
+				"iso": 50,
+				"width": 3890,
+				"height": 5835
+			},
+			{
+				"fileName": "33.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/160",
+				"iso": 50,
+				"width": 3911,
+				"height": 5866
+			}
+		],
+		[
+			{
+				"fileName": "41.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/100",
+				"iso": 50,
+				"width": 5740,
+				"height": 3827
+			},
+			{
+				"fileName": "42.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/250",
+				"iso": 50,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "5.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/160",
+				"iso": 50,
+				"width": 5514,
+				"height": 3676
+			}
+		],
+		[
+			{
+				"fileName": "61.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/250",
+				"iso": 50,
+				"width": 5910,
+				"height": 3940
+			},
+			{
+				"fileName": "62.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/200",
+				"iso": 50,
+				"width": 6000,
+				"height": 4000
+			}
+		],
+		[
+			{
+				"fileName": "7.jpg",
+				"focalLength": "50 mm",
+				"aperture": "2.80",
+				"shutterSpeed": "1/125",
+				"iso": 50,
+				"width": 3826,
+				"height": 5740
+			}
+		]
+	],
+	"tags": [
+		"portrait"
+	]
+}
