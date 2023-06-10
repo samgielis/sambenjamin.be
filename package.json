@@ -16,7 +16,7 @@
         "bootstrap": "^4.5.2",
         "exif-js": "^2.3.0",
         "exifreader": "^3.12.2",
-        "gatsby": "^2.24.53",
+        "gatsby": "^4.25.7",
         "gatsby-plugin-gosquared": "^1.0.1",
         "gatsby-plugin-react-helmet": "^3.3.10",
         "gatsby-plugin-sharp": "^2.6.31",
